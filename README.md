@@ -1,12 +1,12 @@
 # Microbial Genomics Journey Workshop 2023
 
-__Instructor__
+__Instructor__<br/>
 Ahmed M. Moustafa
 
-__Teaching Assistants__
-Daniel P. Morreale (Dan)
-Qianxuan She (Sean)
-Erin Marie Theiller (Erin)
+__Teaching Assistants__<br/>
+Daniel P. Morreale (Dan)<br/>
+Qianxuan She (Sean)<br/>
+Erin Marie Theiller (Erin)<br/>
 
 ## Syllabus
 * [Why is it important to learn microbial genomics?](Unix_intro.md/#why-is-it-important-to-learn-microbial-genomics)
