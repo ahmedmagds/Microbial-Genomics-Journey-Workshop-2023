@@ -46,6 +46,7 @@ Acquire enough knowledge and skills to use microbial genomics approaches in Your
 
 ## Knowledge Map
 Map your Microbial Genomics knowledge out. Knowledge mapping helps communicate information and solve complex problems. Think about the concepts, procedure and competencies. It will help you advance your current understandings of microbial genomics or any other field. Knowledge maps will also serve as a visual aid representing ideas and their resources. We will start the course with a knowledge map and update it in the last session of the course. Please use the provided example to map out your microbial genomics knowledge. The Microbial genomics knowledge map shared [here](Knowledge_Map_1.pptx) is very simple. Try to be very detailed about each step and process. You can produce more than one map for the different main processes and we will try to combine them in one map by the end of the course.
+![Knowledge Map](Knowledge_Map_1.jpg)
 
 ---
 
