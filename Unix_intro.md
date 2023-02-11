@@ -359,6 +359,7 @@ Let's try conda. First tool to install is a tool that replaces conda :).<br/>
 conda install -c conda-forge mamba
 ```
 Mamba is now installed in the conda base environment.
+
 ## Bioconda
 * [Bioconda](https://bioconda.github.io/) lets you install thousands of software packages related to biomedical research using the conda package manager.
 * You will need a one-time set up to set up the channels for bioconda.
@@ -369,6 +370,7 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 **Now you are ready to install new tools. It is highly recommended to create a new environement for each tool separetely. Why do you think we need new env?**
+
 ### Install FASTQC
 [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) is a quality control tool for high throughput sequence data.
 ```
@@ -384,6 +386,7 @@ conda activate fastqc
 fastqc -h
 ```
 You can switch between environments using `conda activate env_name` and `conda deactivate`.
+
 ### Install MultiQC
 [MultiQC](https://github.com/ewels/MultiQC) is a tool to create a single report with interactive plots for multiple bioinformatics analyses across many samples.
 ```
@@ -424,6 +427,7 @@ conda activate multiqc
 pip install multiqc
 multiqc -h
 ```
+
 ### Install Mash
 [Mash](https://mash.readthedocs.io/en/latest/index.html)
 ```
@@ -433,6 +437,7 @@ conda activate mash
 mash
 ```
 You will need to download a database for [Mash](https://obj.umiacs.umd.edu/mash/screen/RefSeq88n.msh.gz).
+
 ### Install Shovill
 [Shovill](https://github.com/tseemann/shovill)
 ```
@@ -450,7 +455,7 @@ conda activate quast
 quast -h
 ```
 ### Install CheckM
-[CheckM](https://github.com/Ecogenomics/CheckM)]
+[CheckM](https://github.com/Ecogenomics/CheckM)
 ```
 conda deactivate
 mamba create -n checkm python=3.9
@@ -462,8 +467,9 @@ conda activate checkm
 checkm -h
 ```
 **If you try `conda install -c bioconda checkm-genome`, it will not work. This is an example of where you have to check multiple sources**
+
 ### Install Busco
-[Busco](https://busco.ezlab.org/)]
+[Busco](https://busco.ezlab.org/)
 ```
 conda deactivate
 mamba create -n busco -c conda-forge -c bioconda busco=5.4.4
@@ -472,7 +478,7 @@ busco -h
 ```
 **If you try` mamba create -n busco -c bioconda busco`, it will not work. This is an example of where you have to check multiple sources**
 ### Install Prokka
-[Prokka](https://github.com/tseemann/prokka)]
+[Prokka](https://github.com/tseemann/prokka)
 ```
 conda deactivate
 mamba create -n prokka -c bioconda prokka
@@ -480,7 +486,7 @@ conda activate prokka
 prokka
 ```
 ### Install Bakta
-[Bakta](https://github.com/oschwengers/bakta)]
+[Bakta](https://github.com/oschwengers/bakta)
 ```
 conda deactivate
 mamba create -n bakta -c conda-forge -c bioconda bakta
@@ -508,7 +514,7 @@ conda activate abricate
 abricate --check
 ```
 ### Install mlst
-[mlst](https://github.com/tseemann/mlst)]
+[mlst](https://github.com/tseemann/mlst)
 ```
 conda deactivate
 mamba create -n mlst -c conda-forge -c bioconda -c defaults mlst
@@ -516,7 +522,7 @@ conda activate mlst
 mlst
 ```
 ### Install blast
-[blast](https://www.ncbi.nlm.nih.gov/books/NBK279690/)]
+[blast](https://www.ncbi.nlm.nih.gov/books/NBK279690/)
 ```
 conda deactivate
 mamba create -n blast -c bioconda blast
