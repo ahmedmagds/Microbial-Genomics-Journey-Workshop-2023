@@ -460,6 +460,7 @@ quast -h
 ```
 conda deactivate
 mamba create -n checkm python=3.9
+conda activate checkm
 pip3 install numpy
 pip3 install matplotlib
 pip3 install pysam
