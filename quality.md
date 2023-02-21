@@ -1,4 +1,5 @@
 # Microbial Genomics Journey Workshop 2023
+## Session 2: Quality Control
 
 ## Intro
 The sequencing of microbial genomes has become a common practice for various applications, including identifying clusters, investigating outbreaks, and monitoring emergence and evolution of pathogens. To ensure accurate downstream analysis, it is essential to perform thorough quality control on the raw data.<br/>
