@@ -24,9 +24,9 @@ Generally 30-50x for a bacterial genome is considered okay in the field. I usual
 **How can you confirm the integrity of the transferred data?**
 MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash value (MD5 value, 32-digit numbers and letters) of a given file to verify integrity of transmitted data. Single letter change will result in a completely new hash value. You can use it on Mac `md5 file_name` and linux `md5sum file_name`. Let's try it on problem_set1.tar.
 ```
-md5 problem_set1.tar
+md5 problem_set1.tar.gz
 ```
-You should get this md5 value ().
+You should get this md5 value (cf3b9580499abd3606c0a535308c3dd6).
 
 ## FASTA
 In FASTA format the line before the nucleotide sequence, called the FASTA definition line, must begin with a carat (">"), followed by a unique SeqID (sequence identifier). The SeqID must be unique for each nucleotide sequence and should not contain any spaces. It is optionally be followed by a text description of the sequence. Softwares may ignore this as it is optional, when it is present. One or more lines containing the sequence itself (convention is 60 characters per line).<br/>
