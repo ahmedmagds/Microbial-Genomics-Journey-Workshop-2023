@@ -48,6 +48,7 @@ Erin Marie Theiller (Erin)<br/>
     * [Install mlst](Unix_intro.md/#install-mlst)
   * [Text Editors](Unix_intro.md/#text-editors)
   * [Further Readings](Unix_intro.md/#further-readings)
+* [Problem Set 1](Problem_Set1.md)
 * [Session 2: Quality Control](quality.md)
   * [FASTA](quality.md/#fasta)
   * [FASTQ](quality.md/#fastq)
