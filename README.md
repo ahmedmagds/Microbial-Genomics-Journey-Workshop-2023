@@ -50,7 +50,7 @@ Erin Marie Theiller (Erin)<br/>
   * [Further Readings](Unix_intro.md/#further-readings)
 * [Session 2: Quality Control](quality.md)
   * [FASTA](quality.md/#fasta)
-  * [FASTAQ](quality.md/#fastaq)
+  * [FASTQ](quality.md/#fastq)
   * [Shotgun Metagenomics?!!](quality.md/#metagenomics)
   * [FASTQC](quality.md/#fastqc)
   * [MultiQC](quality.md/#multiqc)
