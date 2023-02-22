@@ -26,7 +26,7 @@ MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash valu
 ```
 md5 problem_set1.tar.gz
 ```
-You should get this md5 value (cf3b9580499abd3606c0a535308c3dd6).
+You should get this md5 value (cf3b9580499abd3606c0a535308c3dd6). **Add this command/concept to your Knowledge Map**.
 
 ## FASTA
 In FASTA format the line before the nucleotide sequence, called the FASTA definition line, must begin with a carat (">"), followed by a unique SeqID (sequence identifier). The SeqID must be unique for each nucleotide sequence and should not contain any spaces. It is optionally be followed by a text description of the sequence. Softwares may ignore this as it is optional, when it is present. One or more lines containing the sequence itself (convention is 60 characters per line).<br/>
