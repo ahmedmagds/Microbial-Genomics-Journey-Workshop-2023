@@ -151,7 +151,7 @@ cd ~/MGJW/problem_set1/fastq
 multiqc .
 ```
 ## Mash
-It is a Fast genome and metagenome distance estimation using MinHash. It compares a pair of genomes and approximates similarity between them in nucleotide content. It can be used for checking contamination and screening of your newly sequenced genome against the entire RefSeq database. You will need your genome and a mash RefSeq database (included in the folder that you downloaded).<br/>
+It is a Fast genome and metagenome distance estimation using MinHash. It turns large sequences to small, representative sketches. It compares a pair of genomes and approximates similarity between them in nucleotide content. It can be used for checking contamination and screening of your newly sequenced genome against the entire RefSeq database. You will need your genome and a mash RefSeq database (included in the folder that you downloaded).<br/>
 Let's check the mockdna sample in the fastq folder. Mash can handle one file for the sample so we will have to concatenate our reads.
 ```
 conda activate mash
