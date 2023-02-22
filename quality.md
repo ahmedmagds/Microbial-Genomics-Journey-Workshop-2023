@@ -114,6 +114,11 @@ FFFFFFFFFFFFFFFF:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:FFFFFFF
 `wc -l list_directory.txt | awk '{print $1/4}'`
 Sometimes the number of reads in sample1_R1.fastq is different from sample1_R2.fastq. This means there are orphan reads in one file and they do not have mates.
 
+**What does happen on the sequencer? Why is that important?**
+![Adapter](Illumina_adapters.jpg)
+Illumina Figure showing a paired-end flow cell for MiSeq, HiSeq 2000/2500 and NovaSeq 6000<br/>
+Adapter trimming is the process of removing adapter sequences from the 3’ ends of reads. Adapter sequences should be removed from reads because they interfere with downstream analyses, such as alignment of reads to a reference. it is necessary to eliminate adapter sequences from reads. These adapter sequences contain important elements, including the sequencing primer binding sites, the index sequences, and the sites that facilitate the attachment of library fragments to the flow cell lawn. We will discuss adapter trimming in the next session. 
+
 ## Metagenomics
 * Metagenomics is the study of genomic sequences obtained directly from an environment/sample.
 * Whole-genome “shotgun” metagenomic sequencing: sequence all DNA present (not restricted to bacteria/archaea).
