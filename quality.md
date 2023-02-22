@@ -84,7 +84,8 @@ CCACCTATCTGCTGGTCAGCTCGGTCGGCATCGAGTTCGGCGAGCATCAGCGCTTCACGCTCAAATGGGCACTCGGCTCG
 #######################################################################################################################################################
 ```
 * Notice the F and # which correspond to a quality score of 37 and 2, respectively. # or Q-score of 2 is very poor quality. You can check Quality Score Encoding [here](https://support.illumina.com/help/BaseSpace_OLH_009008/Content/Source/Informatics/BS/QualityScoreEncoding_swBS.htm).
-* Read identifier ExplanationL
+Let's check Illumina [Flowcell](https://www.google.com/search?q=illumina+flow+cell+lanes+and+tiles&rlz=1C5GCEA_enUS1010US1013&sxsrf=AJOqlzVu7fp1Q95WS-L4_n5IuO6K7T-XAA:1677069016513&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj_z_j3kKn9AhXXlIkEHZwVAQsQ_AUoAXoECAEQAw&biw=1728&bih=891&dpr=2) to understand the concepts of lanes and tiles.
+* Read identifier Explanation
   * Each sequence identifier line starts with @.
   * A00901 (instrument name)
   * 812 (run id on the instrument)
