@@ -36,7 +36,7 @@ echo "Hello Bacteria"
 echo "Hello Viruses"
 echo "Hello Bacteria"
 ```
-This is quick manual of how to use vi (https://www.marquette.edu/mathematical-and-statistical-sciences/basic-vi-editor-commands.php). You will need to use letter i to start inserting in the file. After editing, you will need to use esc button and then :wq to save and exit.
+This is quick manual of how to use vi (https://www.marquette.edu/mathematical-and-statistical-sciences/basic-vi-editor-commands.php). You will need to use letter i to start inserting in the file. After editing, you will need to use esc button and then type :wq to save and exit.
 * Count the number of lines in script.sh and redirect output to a new file called number_of_lines.txt
 * Try to run this shell script using `./script.sh`, did it work?
 * Change permissions of the file to be readable, writable and executable for everyone (google chmod 777)
