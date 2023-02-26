@@ -334,10 +334,10 @@ git pull
 ## Conda
 [Conda](https://docs.conda.io/projects/conda/en/latest/index.html) is an open-source package management system and environment management system that runs on Windows, macOS, and Linux. Conda quickly installs, runs, and updates packages and their dependencies. Conda easily creates, saves, loads, and switches between environments on your local computer. It was created for Python programs but it can package and distribute software for any language.
 
-### Install miniconda for Windows
+### Install miniconda for Windows and Linux
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash ./Miniconda3-py39_4.12.0-Linux-x86_64.sh
+bash ./Miniconda3-latest-Linux-x86_64.sh
 source .bashrc
 ```
 Follow instructions after the bash command and keep confirming and accepting.<br/>
