@@ -57,6 +57,7 @@ Erin Marie Theiller (Erin)<br/>
   * [MultiQC](quality.md/#multiqc)
   * [Mash](quality.md/#mash)
   * [Further Readings](quality.md/#further-readings)
+* [Problem Set 2](Problem_Set2.md)
 * [Session 3: Assembly](assembly.md)
   * [Shovill](assembly.md/#shovill)
   * [Quast](assembly.md/#quast)
