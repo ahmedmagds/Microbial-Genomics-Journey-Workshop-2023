@@ -29,13 +29,14 @@ Let's test what we learnt last session [here](https://play.kahoot.it/v2/lobby?qu
 * Change your directory to home directory
 * Change your directory to your MGJW directory or create it if it does not exist
 * Install emacs text editor using Conda
-* Make a new file using emacs without opening it in a graphical user interface (google open emacs in the terminal) and name the file script.sh and type in it
+* Make a new file using vi and name the file script.sh and type in it
 ```
 echo "Hello Microbes"
 echo "Hello Bacteria"
 echo "Hello Viruses"
 echo "Hello Bacteria"
 ```
+This is quick manual of how to use vi (https://www.marquette.edu/mathematical-and-statistical-sciences/basic-vi-editor-commands.php). After editing, you will need to use esc button and then :wq to save and exit.
 * Count the number of lines in script.sh and redirect output to a new file called number_of_lines.txt
 * Try to run this shell script using `./script.sh`, did it work?
 * Change permissions of the file to be readable, writable and executable for everyone (google chmod 777)
