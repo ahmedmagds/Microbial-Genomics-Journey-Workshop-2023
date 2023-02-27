@@ -23,7 +23,7 @@ cd ~/MGJW/problem_set1/fastq
 cat mockdna_R1.fastq mockdna_R2.fastq > mockdna_reads.fastq
 gunzip ../RefSeqSketches.msh.gz
 mash screen -w -p 8 ../RefSeqSketches.msh mockdna_reads.fastq > mockdna_screen_winning.tab
-less mock_screen_winning.tab
+less mockdna_screen_winning.tab
 sort -gr mockdna_screen_winning.tab > mockdna_screen_winning_sorted.tab
 less mockdna_screen_winning_sorted.tab
 ```
@@ -37,7 +37,7 @@ less genome2_screen_winning_sorted.tab
 
 ## Part 2
 * `cd ~/MGJW/problem_set1/fasta`
-* try `mash dist genome3.fna genome4.fna`
+* try `mash dist genome3.fasta genome4.fasta`
 * Let's make our own mash database using `mash paste` for the three genomes in the fasta directory (`MGJW/problem_set1/fasta`)
   * `mash sketch -s 1000 -k 21 genome2.fasta`
   * `mash sketch -s 1000 -k 21 genome3.fasta`

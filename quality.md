@@ -118,7 +118,7 @@ Sometimes the number of reads in sample1_R1.fastq is different from sample1_R2.f
 **What does happen on the sequencer? Why is that important?**
 ![Adapter](Illumina_adapters.jpg)
 Illumina Figure showing a paired-end flow cell for MiSeq, HiSeq 2000/2500 and NovaSeq 6000<br/>
-Adapter trimming is the process of removing adapter sequences from the 3’ ends of reads. Adapter sequences should be removed from reads because they interfere with downstream analyses, such as alignment of reads to a reference. it is necessary to eliminate adapter sequences from reads. These adapter sequences contain important elements, including the sequencing primer binding sites, the index sequences, and the sites that facilitate the attachment of library fragments to the flow cell lawn. We will discuss adapter trimming in the next session. 
+Adapter trimming is the process of removing adapter sequences from the 3’ ends of reads. Adapter sequences should be removed from reads because they interfere with downstream analyses, such as alignment of reads to a reference. it is necessary to eliminate adapter sequences from reads. These adapter sequences contain important elements, including the sequencing primer binding sites, the index sequences, and the sites that facilitate the attachment of library fragments to the flow cell lawn. We will discuss adapter trimming in the next session.
 
 ## Metagenomics
 * Metagenomics is the study of genomic sequences obtained directly from an environment/sample.
@@ -159,7 +159,7 @@ cd ~/MGJW/problem_set1/fastq
 cat mockdna_R1.fastq mockdna_R2.fastq > mockdna_reads.fastq
 gunzip ../RefSeqSketches.msh.gz
 mash screen -w -p 8 ../RefSeqSketches.msh mockdna_reads.fastq > mockdna_screen_winning.tab
-less mock_screen_winning.tab
+less mockdna_screen_winning.tab
 sort -gr mockdna_screen_winning.tab > mockdna_screen_winning_sorted.tab
 less mockdna_screen_winning_sorted.tab
 ```
