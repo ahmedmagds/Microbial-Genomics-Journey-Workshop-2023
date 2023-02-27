@@ -34,5 +34,14 @@ mash screen -w -p 8 ../RefSeqSketches.msh genome2.fasta > genome2_screen_winning
 sort -gr genome2_screen_winning.tab > genome2_screen_winning_sorted.tab
 less genome2_screen_winning_sorted.tab
 ```
+
+## Part 2
+* `cd ~/MGJW/problem_set1/fasta`
 * try `mash dist genome3.fna genome4.fna`
+* Let's make our own mash database using `mash paste` for the three genomes in the fasta directory (`MGJW/problem_set1/fasta`)
+  * `mash sketch -s 1000 -k 21 genome2.fasta`
+  * `mash sketch -s 1000 -k 21 genome3.fasta`
+  * `mash sketch -s 1000 -k 21 genome4.fasta`
+  * `mash paste genomes.msh genome2.fasta.msh genome3.fasta.msh  genome4.fasta.msh`
+  * `mash info genomes.msh | head -n 20`
 * Save your history of commands in a file called commands_notes_PS2.txt
