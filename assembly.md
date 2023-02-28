@@ -46,10 +46,10 @@ It is a tool to assemble bacterial isolate genomes from Illumina paired-end read
 
 **If you get an error saying `Cannot open temporary file kmc_00253.bin and Could not determine genome size from ''`, use `ulimit -n 2048` to increase limit for opened files for the kmc tool on MacOS.**<br/>
 
-Let's assemble our first genome.
+Let's assemble our first genome. To follow the steps here, you need to download the files available [here](https://www.dropbox.com/scl/fo/8ni4qic39mb3ojapgci1x/h?dl=0&rlkey=p6gyncbcees8754go5s8votvu).
 ```
 conda activate shovill
-shovill --trim --assembler skesa --outdir output_S56 --R1 S56_R1.fastq --R2 S56_R2.fastq
+shovill --trim --assembler skesa --outdir out_S56 --R1 S56_R1.fastq --R2 S56_R2.fastq
 mash screen -w -p 8 ../../problem_set1/RefSeqSketches.msh contigs.fa > S56_screen_winning_contigs.tab
 sort -gr S56_screen_winning_contigs.tab > S56_screen_winning_contigs_sorted.tab
 less S56_screen_winning_contigs_sorted.tab | head -n 10
