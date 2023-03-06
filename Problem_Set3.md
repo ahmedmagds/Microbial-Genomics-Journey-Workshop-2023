@@ -4,7 +4,7 @@
 Let's test what we learnt last session [here](ht).
 
 ## Note for file extections (multiple possible extenstions, but same file)
-FASTA file Extensions: .fasta, .fna, .fa
+FASTA file Extensions: .fasta, .fna, .fa<br/>
 FASTQ file Extensions: .fastq, .fq
 
 ## Part 1
