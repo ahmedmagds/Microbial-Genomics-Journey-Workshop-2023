@@ -38,6 +38,6 @@ whereis generate_plot.py
 ````
 Running this script will produce a png image in the BUSCO_summaries/ directory
 
-![BUSCO Graph](/Users/erintheiller/Downloads/busco/busco_figure.png)
+![BUSCO Graph](busco_figure.jpg)
 
 For more information, see their documentation: https://busco.ezlab.org/
