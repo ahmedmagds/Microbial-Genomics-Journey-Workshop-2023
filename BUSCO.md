@@ -30,11 +30,8 @@ mkdir BUSCO_summaries
 cp genomeX_busco/short_summary.specifc_enterobacterales_odb10.genomeX.txt BUSCO_summaries/.
 cp genomeY_busco/short_summary.specific.enterobacterales_odb10.genomeY.txt BUSCO_summaries/.
 
-# In your active BUSCO environment, run this command to find the full path to the script
-whereis generate_plot.py
-
 # Now run the script on your BUSCO_summaries directory
-~/miniconda/envs/busco/bin/generate_plot.py -wd BUSCO_summaries/ -rt <generic|specifc> 
+generate_plot.py -wd BUSCO_summaries/ -rt <generic|specifc> 
 ````
 Running this script will produce a png image in the BUSCO_summaries/ directory
 
