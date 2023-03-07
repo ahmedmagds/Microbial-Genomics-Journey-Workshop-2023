@@ -2,7 +2,7 @@
 
 ***Please note:*** Standards for rigor and reproducibility vary within bacterial genomics (and can vary even more in the bioinformatics world outside of bacteria). This document contians some imoprtant notes for getting started that are broadly applicable. There are a lot of things that can impact the final output of a microbial sequencing project and can cause programs to output different results. There are some important ones.
 
-**Microbial genomics is, at its core, a bunch of statistical tests that are manipulated by you to generate a result. Like all statistics, there is some chance you will get the wrong answer. Each tool we use is essentially a slighlty different way of applying a statical test to the data. Because of this, you can get very different results even if the same dataset is used. This is compounded by a couple of factors: if ***you*** change any parameters (i.e. you change a numberical cut-off or k-mer size), if ***the developer*** changes any parameters, or if ***the data*** changes in any way.<br/>
+Microbial genomics is, at its core, a bunch of statistical tests that are manipulated by you to generate a result. Like all statistics, there is some chance you will get the wrong answer. Each tool we use is essentially a slighlty different way of applying a statical test to the data. Because of this, you can get very different results even if the same dataset is used. This is compounded by a couple of factors: if ***you*** change any parameters (i.e. you change a numberical cut-off or k-mer size), if ***the developer*** changes any parameters, or if ***the data*** changes in any way.<br/>
 
 ## The Golden Rule of bacterial genomics:<br/>
 ### ***BACK UP YOUR DATA MORE THAN YOU THINK IS NECESSARY.***<br/>
