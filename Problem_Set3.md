@@ -1,7 +1,7 @@
 # MGJW Problem Set 3
 
 ## Kahoot
-Let's test what we learnt last session [here](ht).
+Let's test what we learnt last session [here](https://play.kahoot.it/v2/?quizId=48f1299b-b610-4281-a0f0-8de0bea617cc).
 
 ## Note for file extections (multiple possible extenstions, but same file)
 FASTA file Extensions: .fasta, .fna, .fa<br/>
@@ -38,6 +38,8 @@ You will find quast_results folder and in there you will find the latest folder,
 * What is the L50 and L90 for genome4.fasta from problem_set1?
 
 ## busco
+[Busco by Erin Theiller](BUSCO.md)
+
 Let's assess contamination in some genome assemblies using single-copy orthologs! Notice on the same genome, we can check different taxonomical levels (bacteria_odb10, clostridiales_odb10, pseudomonadales_odb10).
 ```
 conda activate busco
@@ -69,3 +71,5 @@ mamba create -n abricate -c conda-forge -c bioconda -c defaults abricate
 conda activate abricate
 abricate --check
 ```
+## Reproducibility
+[Reproducibility by Daniel P. Morreale](Reproducability.md)
