@@ -1,4 +1,4 @@
-# Rigor and Reproducability in Bacterial Genomics
+# Rigor and Reproducibility in Bacterial Genomics
 
 ***Please note:*** Standards for rigor and reproducibility vary within bacterial genomics (and can vary even more in the bioinformatics world outside of bacteria). This document contians some imoprtant notes for getting started that are broadly applicable. There are a lot of things that can impact the final output of a microbial sequencing project and can cause programs to output different results. There are some important ones.
 
