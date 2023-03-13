@@ -71,6 +71,7 @@ Erin Marie Theiller (Erin)<br/>
   * [Prokka](annotation.md/#prokka)
   * [abricate](annotation.md/#abricate)
   * [Further Readings](annotation.md/#further-readings)
+* [Problem Set 4](Problem_Set4.md)
 * [Session 5: Blast database and Typing/MLST](typing.md)
   * [Lecture by Dr. Kyle Bittinger](pjp-phylo.pdf)
   * [blast](typing.md/#blast)
