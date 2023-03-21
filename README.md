@@ -79,6 +79,7 @@ Erin Marie Theiller (Erin)<br/>
   * [SARS-CoV-2](typing.md/#gnuvid)
   * [Further Readings](typing.md/#further-readings)
 * [Session 6: Reference based analysis](ref.md)
+  * [Decontaminate reads from phiX](ref.md/#decontaminate)
   * [Snippy](ref.md/#snippy)
   * [Further Readings](ref.md/#further-readings)
 * [Session 7: Pangenome analysis](pangenome.md)
