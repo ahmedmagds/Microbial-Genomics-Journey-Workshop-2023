@@ -36,3 +36,5 @@ mamba create -n snippy -c bioconda snippy
 conda activate snippy
 snippy
 ```
+## Bash Script
+[Looping by Qianxuan(Sean) She](https://github.com/qianxuans/MGJW_LoopingScript)
