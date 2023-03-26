@@ -20,7 +20,7 @@ snipit core_SNP_alignment.aln --solid-background -r Reference
 
 ### Looking at the output 
 
-![snipit output]()
+![snipit output](MGJW_SnipitFigure.pdf)
 
 For more information, check out the GitHub page: https://github.com/aineniamh/snipit
 
