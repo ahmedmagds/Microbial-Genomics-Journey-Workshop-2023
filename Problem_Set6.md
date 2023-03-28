@@ -5,7 +5,7 @@ Let's test what we learnt last session [here](htt).
 
 ## Part 1
 ### Download needed files
-* To follow the steps here, you need to download this file from this dropbox URL [problem_set6.tar.gz](https://www) and put it in MGJW or using `wget -O problem_set6.tar.gz https://w --no-check-certificate`
+* To follow the steps here, you need to download this file from this dropbox URL [problem_set6.tar.gz](https://www.dropbox.com/s/hyjuujea5y0wd2c/problem_set6.zip?dl=0) and put it in MGJW or using `wget -O problem_set6.tar.gz https://www.dropbox.com/s/hyjuujea5y0wd2c/problem_set6.zip?dl=0 --no-check-certificate`
 * If you downloaded the file from the web and not using `wget`, you will need to move it to MGJW `mv ~/Downloads/problem_set6.tar.gz ~/MGJW`.
 * Unarchive the file `tar -xf problem_set6.tar.gz -C ./`
 
