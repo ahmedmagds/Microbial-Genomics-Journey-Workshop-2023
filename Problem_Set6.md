@@ -1,7 +1,7 @@
 # MGJW Problem Set 6
 
 ## Kahoot
-Let's test what we learnt last session [here](htt).
+Let's test what we learnt last session [here](https://play.kahoot.it/v2/?quizId=a4651b80-d527-4c44-9da6-1d19fd9080ed).
 
 ## Part 1
 ### Download needed files
