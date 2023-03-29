@@ -53,3 +53,5 @@ cd panaroo/
 python3 setup.py install
 panaroo -h
 ```
+## part 3
+[Visualizing Your SNPs](https://github.com/ahmedmagds/Microbial-Genomics-Journey-Workshop-2023/blob/main/snipit.md)
