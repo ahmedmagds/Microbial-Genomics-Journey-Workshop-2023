@@ -21,7 +21,7 @@ snipit core.aln --solid-background -r Reference
 
 ### Looking at the output 
 
-![snipit output]()
+![snipit output](SnipitFigure.jpg)
 
 ## snp-dists
 ### Installing snp-dists
@@ -34,9 +34,8 @@ conda install -c bioconda -c conda-forge snp-dists
 snp-dists core.aln > distances.tab
 ```
 
-### Looking at the output
+#### Let's take a look at the output!
 
-![snp-dists output]()
 
 ## Further Information
 Check out their GitHub pages:\
