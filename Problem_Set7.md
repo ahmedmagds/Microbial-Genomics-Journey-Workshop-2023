@@ -8,7 +8,7 @@
 #### I'll be providing minimal instructions; do your best to work through this and do hesitate to ask us questions. When I do include code, I have left sections it very generic. Some text will need to be replaced with the specifics for your device or strain.<br/>
 
 #### Since we haven't discussed downloading public data in class, I made a short video showing how its done:<br/><br/>
-![Video_instructions](Downloading_fasta.mov)<br/><br/>
+![Video_instructions](https://youtu.be/g5j1vfv9ojo)<br/><br/>
 #### Breifly, we navigate to NCBI's nucleotide database, paste in our accession number in the search bar, and hit search. This will bring up the record for this isolate. You then click on "Send to" in the upper right corner of the white box, then click "File", and finally select "FASTA" from the Format drop down box. This will automatically download the record to your computer. BE SURE TO RENAME THEM WITH THE PROPER IDENTIFIER WHEN YOU MOVE THEM INTO A FOLDER FOR THE PROBLEM SET.<br/>
 
 ## Get the data.
