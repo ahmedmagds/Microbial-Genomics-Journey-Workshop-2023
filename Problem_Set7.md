@@ -29,7 +29,7 @@
 #### 3. Standardize the annotations by running Prokka on these fasta files. Feel free to do this with a shell script if you're comfortable. *HINT* Be sure you are in the proper Conda environment. <br/>
 
 ```
-prokka --outdir <STRAIN NAME> --kingdom Bacteria --prefix <STRAIN NAME> --gcode 11 --genus Neisseria --gram neg <file>.fasta
+prokka --outdir <STRAIN NAME> --kingdom Bacteria --prefix <STRAIN NAME> --gcode 11 --genus Neisseria <file>.fasta
 
 ```
 
