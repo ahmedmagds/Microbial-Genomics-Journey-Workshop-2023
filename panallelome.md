@@ -79,17 +79,17 @@ Let's explore the output files. You will get 3 files for each genome with the pr
 
 ![GNU Score](GNU_4.jpg)
 
-* Automated Visualization - Targeted
+#### Automated Visualization - Targeted - Heatmap
 ```
 WhatsGNU_plotter.py -hp ortholog -q heatmap_ptns.faa -r -t Diagnostic_and_conservative_ptns -r -f 14 -fs 14 10 NAE_SAE_hp WhatsGNU_reports/
 ```
 ![Heatmap OutPut from this command will look like this](WhatsGNU_heatmap_example.jpg)
-* Automated Visualization - Untargeted - Histogram
+#### Automated Visualization - Untargeted - Histogram
 ```
 WhatsGNU_plotter.py -x -e blue -b 100 -p 50 5000 NAE_SAE WhatsGNU_reports/
 ```
 ![Histogram OutPut from this command will look like this](C2701_NAE_WhatsGNU_histogram.jpg)
-* Automated Visualization - Untargeted - Volcano plot
+#### Automated Visualization - Untargeted - Volcano plot
 ```
 WhatsGNU_plotter.py -st isolates_case_control_tag.csv -c 100 NAE_SAE_volcano WhatsGNU_reports/
 ```
