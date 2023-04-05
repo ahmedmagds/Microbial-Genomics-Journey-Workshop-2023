@@ -89,6 +89,7 @@ Erin Marie Theiller (Erin)<br/>
   * [Panaroo](pangenome.md/#panaroo)
   * [Scoary](pangenome.md/#scoary)
   * [Further Readings](pangenome.md/#further-readings)
+* [Problem Set 7](Problem_Set7.md)
 * [Session 8: Panallelome analysis](panallelome.md)
   * [WhatsGNU](panallelome.md/#whatsgnu)
   * [Further Readings](panallelome.md/#further-readings)
