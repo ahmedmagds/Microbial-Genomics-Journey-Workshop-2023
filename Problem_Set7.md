@@ -1,4 +1,6 @@
 # MGJW Problem set 7<br/><br/>
+# Kahoot
+Let's test what we learnt last session [here](https://play.kahoot.it/v2/?quizId=94c5ee6a-9b67-45fb-b8f5-c448a7b24b62).
 
 # Background:<br/>
 #### You've made it far enough now that we can start chaining tools together into (small) pipelines to ask questions about the pangenome of species or isolates of interest. While we've spent most of our examples and problems sets working on *S. aureus* genomes, we're going to change it up and take a look at a bacterial species with an infamously large pangenome: *Neisseria meningitidis*. *N. meningitidis* is a common human commensal, and one of the major causes of bacterial meningitis world-wide. If you're in the US, you've likely been vaccinated against the most common circulating serotypes (called A, C, W, and Y), and possibly one other serotype responsible for some particularly nasty infections (B).<br/>

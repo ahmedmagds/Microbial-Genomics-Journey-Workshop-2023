@@ -93,6 +93,7 @@ Erin Marie Theiller (Erin)<br/>
 * [Session 8: Panallelome analysis](panallelome.md)
   * [WhatsGNU](panallelome.md/#whatsgnu)
   * [Further Readings](panallelome.md/#further-readings)
+* [Problem Set 8](Problem_Set8.md)
 * [Session 9: Kmer analysis](kmer.md)
   * [KmerGo](kmer.md/#data-structures)
   * [PySeer](kmer.md/#link-to-python-8-problem-set)
