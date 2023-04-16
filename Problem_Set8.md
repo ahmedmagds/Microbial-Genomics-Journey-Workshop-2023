@@ -1,7 +1,7 @@
 # MGJW Problem set 8
 
 ## Kahoot
-Let's test what we learnt last session [here]().
+Let's test what we learnt last session [here](https://play.kahoot.it/v2/?quizId=e0726fca-d735-449d-ae31-b506497eb752).
 
 ## WhatsGNU
 In this problem set, you'll download the genomes for 8 _Klebsiella pneumoniae_ isolates from NCBI using the WhatsGNU download script.<br/>

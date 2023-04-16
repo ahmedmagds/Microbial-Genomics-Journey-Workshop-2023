@@ -100,6 +100,7 @@ Erin Marie Theiller (Erin)<br/>
   * [Recombination Detection](kmer.md/#recombination)
     * [ClonalFrameML](kmer.md/#clonalframeml)
   * [Further Readings](kmer.md/#further-readings)
+* [Problem Set 9](Problem_Set9.md)
 * [Session 10: Phylogenetics](phylo.md)
   * [Lecture by Dr. Paul Planet](pjp-phylo.pdf)
   * [RAxML](phylo.md/#raxml)
