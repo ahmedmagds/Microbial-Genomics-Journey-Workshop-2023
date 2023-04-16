@@ -45,4 +45,4 @@ I would recommend going through the different [GWAS tutorials](https://pyseer.re
 **N.B. This command may not work `python scripts/qq_plot.py penicillin_kmers.txt`. Skip it and continue with the rest**
 
 ## Recombination
-* [ClonalFrameML tutorial](https://github.com/xavierdidelot/clonalframeml/wiki). the data for this tutorial should be downloaded from [here](https://doi.org/10.6084/m9.figshare.19626912).
+[ClonalFrameML tutorial](https://github.com/xavierdidelot/clonalframeml/wiki). the data for this tutorial should be downloaded from [here](https://doi.org/10.6084/m9.figshare.19626912). Just do the standard model example. This ClonalFrameML command may take 12 hours to run, I would recommend doing that overnight after business hours.
