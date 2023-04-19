@@ -70,6 +70,8 @@ iqtree -s ALIGNMENT.aln -m MFP -bb 1000
 ```
 #### You did it! The program outputs a bunch of files, and you should read about what each one is. But the <NAME>.contree can be opened in [Itol](https://itol.embl.de/tree/15914236153188591681913897) or Figtree, and it includes the branch support values.
 
+#### [IQ-Tree Web Server](http://iqtree.cibiv.univie.ac.at/)
+
 ### Part 3: Tree visualization!
 There are multiple tree visualization tools.
 * [Interactive Tree Of Life (iTOL)](https://itol.embl.de) is an online tool for the display, annotation and management of phylogenetic and other trees. You can manage and visualize your trees directly in the browser, and annotate them with various datasets. You can share a live interactive version of the tree with others.
