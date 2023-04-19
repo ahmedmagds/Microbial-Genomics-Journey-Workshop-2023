@@ -48,10 +48,11 @@ conda deactivate
 #### Run IQ Tree with model finder
 ```
 conda activate iqtree
-iqtree -s clean_core_full.aln -m MFP -bb 1000
+iqtree -s clean.full.aln -m MFP -bb 1000
 ```
 
-#### You did it! The program outputs a bunch of files, and you should read about what each one is. But the <NAME>.contree can be opened in Itol or Figtree, and it includes the branch support values.
+#### You did it! The program outputs a bunch of files, and you should read about what each one is. But the <NAME>.contree can be opened in [Itol](https://itol.embl.de/tree/15914236153194331681913910) or Figtree, and it includes the branch support values.
+
 
 ### Part 2: Build a tree from a bunch of protein sequences.
 #### Another common analysis you may run into is analyzing protein sequence diversity in a population. You can do this a lot of different ways (concatenating or partitioning the sequences, site specific, or in at the single protein level). For simplicity, we're going to take a single protein and collect 100 homologs from the NCBI database using BlastP.
@@ -67,17 +68,25 @@ MSYTFTGKKRIRKSFAKRETILEVPYLLTTQLESYSHFLQQNRSADKRVDEGLQAAFSSIFPILSNNGYAELQFDQYILG
 conda activate iqtree
 iqtree -s ALIGNMENT.aln -m MFP -bb 1000
 ```
-#### You did it! The program outputs a bunch of files, and you should read about what each one is. But the <NAME>.contree can be opened in Itol or Figtree, and it includes the branch support values.
+#### You did it! The program outputs a bunch of files, and you should read about what each one is. But the <NAME>.contree can be opened in [Itol](https://itol.embl.de/tree/15914236153188591681913897) or Figtree, and it includes the branch support values.
 
 ### Part 3: Tree visualization!
 There are multiple tree visualization tools.
-* Interactive Tree Of Life (iTOL) is an online tool for the display, annotation and management of phylogenetic and other trees. You can manage and visualize your trees directly in the browser, and annotate them with various datasets. You can share a live interactive version of the tree with others.<br/>
-Let's have a look at this [tree](https://itol.embl.de/tree/15914228161273581674704515)in iTol from a project we are currently working on.
+* [Interactive Tree Of Life (iTOL)](https://itol.embl.de) is an online tool for the display, annotation and management of phylogenetic and other trees. You can manage and visualize your trees directly in the browser, and annotate them with various datasets. You can share a live interactive version of the tree with others.
+* [Figtree](https://github.com/rambaut/figtree/releases/tag/v1.4.4) is designed as a graphical viewer of phylogenetic trees and as a program for producing publication-ready figures. I use this the most.
+* [Dendroscope](https://software-ab.cs.uni-tuebingen.de/download/dendroscope3/welcome.html) is another interactive viewer for rooted phylogenetic trees and networks. I like this for big trees.
 
 ## Cladebreaker
+Genomic surveillance for emerging diseases, transmission events, epidemics and outbreaks is becoming the gold standard for molecular epidemiology. Whole genome phylogenetic analysis is the primary method for inferring clonality (monophyly) of outbreaks and transmission patterns, but clear criteria for testing these inferences remain unclear. One approach is to include existing genomes from public databases to test relationships inferred in the phylogeny.  If genomes not associated with the outbreak or transmission event “break up” relationships in the tree by branching within putative outbreak clades, then the observed outbreak may not be clonal. With large genomic databases it may not be clear which genomes to add to a phylogenetic analysis, and including all genomes can become extremely computationally expensive.<br/>  
 
+[CladeBreaker](https://github.com/andriesfeder/cladebreaker) test the hypothesis of clonality by using the most similar genomes available in the database. If these genomes fail to break up the monophyly of the outbreak clade then this provides the strongest evidence possible for clonality.<br/>
+
+* Cladebreaker uses the topgenome function of the WhatsGNU application to quickly identify the most similar genomes to each of the genomes in an outbreak or transmission investigation.
+* It takes in sequence reads, finds the most similar genomes from a database, and runs a full sequence-based phylogenetic analysis based on a reference-based SNP matrix or concatenated amino acids.  The output is a phylogenetic tree containing both the best-hit genomes and the query genomes.  
+* Let's have a look at this [tree](https://itol.embl.de/tree/15914228161273581674704515)in iTol from a project we are currently working on.
 
 ## Further Readings
-* [WhatsGNU Publication](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-01965-w)
-* [An example of using WhatsGNU to evaluate the sequence conservation](https://elifesciences.org/articles/66657)
-* [Pre-epidemic evolution of the MRSA USA300 clade and a molecular key for classification](https://www.frontiersin.org/articles/10.3389/fcimb.2023.1081070/full)
+* [Viewing Tables on the command line](https://rrwick.github.io/2023/04/19/viewing_tables_on_the_command_line.html)
+* [iqtree manual](http://www.iqtree.org/doc/)
+* [Ascertainment bias correction](http://www.iqtree.org/doc/Substitution-Models#ascertainment-bias-correction)
+* [BEAST Tutorials for Bayesian Inference](http://www.beast2.org/tutorials/)
