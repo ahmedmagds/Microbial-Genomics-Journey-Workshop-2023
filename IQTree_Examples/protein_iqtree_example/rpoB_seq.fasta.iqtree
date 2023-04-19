@@ -1,0 +1,1298 @@
+IQ-TREE 2.2.0.3 COVID-edition built Sep  5 2022
+
+Input file name: rpoB_seq.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 104562
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 251 sequences with 1434 amino-acid sites
+Number of constant sites: 990 (= 69.0377% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 990 (= 69.0377% of all sites)
+Number of parsimony informative sites: 333
+Number of distinct site patterns: 481
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.plant+I+I+R3
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.plant+I+I+R3   -14767.595   30543.190 -  0.00315   31091.134 +    0.971   33198.375 +    0.986
+Q.plant+R3       -14775.664   30557.328 - 2.68e-06   31102.515 -  0.00328   33207.244 -   0.0117
+Q.plant+I+I+R4   -14766.443   30544.886 -  0.00135   31098.375 -    0.026   33210.607 -  0.00218
+Q.insect+I+I+R3  -14780.548   30569.096 - 7.47e-09   31117.040 -  2.3e-06   33224.280 - 2.34e-06
+Q.insect+R3      -14785.981   30577.963 - 8.87e-11   31123.150 - 1.08e-07   33227.879 - 3.87e-07
+Q.insect+I+I+R4  -14779.515   30571.031 - 2.84e-09   31124.519 - 5.47e-08   33236.752 - 4.58e-09
+Q.yeast+I+I+R3   -14804.282   30616.564 - 3.68e-19   31164.508 - 1.13e-16   33271.748 - 1.15e-16
+Q.yeast+R3       -14808.395   30622.790 - 1.64e-20   31167.977 -    2e-17   33272.706 - 7.13e-17
+JTT+I+I+R3       -14806.160   30620.320 - 5.62e-20   31168.265 - 1.73e-17   33275.505 - 1.76e-17
+JTTDCMut+I+I+R3  -14806.162   30620.323 - 5.62e-20   31168.267 - 1.73e-17   33275.508 - 1.76e-17
+JTT+R3           -14810.073   30626.146 - 3.05e-21   31171.334 - 3.73e-18   33276.063 - 1.33e-17
+JTTDCMut+R3      -14810.124   30626.248 -  2.9e-21   31171.435 - 3.55e-18   33276.164 - 1.27e-17
+Q.yeast+I+I+R4   -14803.419   30618.837 - 1.18e-19   31172.326 - 2.27e-18   33284.558 -  1.9e-19
+LG+I+I+R3        -14811.921   30631.842 - 1.77e-22   31179.786 - 5.45e-20   33287.027 - 5.54e-20
+Q.insect+F+I+I+R3  -14743.342   30532.684 +    0.603   31134.996 -  2.9e-10   33287.964 - 3.47e-20
+JTT+I+I+R4       -14805.575   30623.150 - 1.37e-20   31176.639 - 2.63e-19   33288.871 -  2.2e-20
+JTTDCMut+I+I+R4  -14805.679   30623.357 - 1.23e-20   31176.846 - 2.37e-19   33289.078 - 1.99e-20
+LG+R3            -14817.232   30640.464 - 2.38e-24   31185.651 -  2.9e-21   33290.380 - 1.04e-20
+LG+I+I+R4        -14806.520   30625.041 - 5.31e-21   31178.529 - 1.02e-19   33290.761 - 8.56e-21
+Q.insect+F+R3    -14748.382   30540.763 -   0.0106   31140.118 - 2.24e-11   33290.776 -  8.5e-21
+Q.insect+F+I+I+R4  -14741.798   30533.595 +    0.382   31141.855 -  9.4e-12   33299.413 - 1.13e-22
+LG+R4            -14816.555   30643.110 - 6.33e-25   31193.822 - 4.88e-23   33303.563 - 1.42e-23
+Q.pfam+I+I+R3    -14820.445   30648.890 - 3.52e-26   31196.834 - 1.08e-23   33304.075 -  1.1e-23
+Q.pfam+I+I+R4    -14814.154   30640.307 - 2.57e-24   31193.796 - 4.95e-23   33306.028 - 4.14e-24
+Q.pfam+R3        -14825.272   30656.544 - 7.66e-28   31201.731 - 9.36e-25   33306.460 - 3.34e-24
+Q.yeast+F+R3     -14758.613   30561.226 - 3.82e-07   31160.580 - 8.08e-16   33311.238 - 3.06e-25
+Q.yeast+F+I+I+R3  -14755.107   30556.214 - 4.68e-06   31158.526 - 2.26e-15   33311.494 - 2.69e-25
+LG+I+G4          -14840.925   30683.850 - 9.01e-34   31223.554 - 1.71e-29   33323.230 - 7.62e-28
+Q.yeast+F+I+I+R4  -14753.979   30557.958 - 1.96e-06   31166.218 - 4.82e-17   33323.775 -  5.8e-28
+Q.plant+F+I+I+R3  -14762.559   30571.118 - 2.72e-09   31173.430 - 1.31e-18   33326.399 - 1.56e-28
+Q.plant+F+R3     -14769.747   30583.494 - 5.58e-12   31182.848 - 1.18e-20   33333.506 - 4.47e-30
+Q.plant+F+I+I+R4  -14761.162   30572.324 - 1.49e-09   31180.583 - 3.66e-20   33338.141 - 4.41e-31
+LG+I+I+R2        -14849.166   30702.332 - 8.74e-38   31244.772 - 4.22e-34   33346.980 - 5.31e-33
+JTT+F+I+I+R3     -14779.334   30604.669 - 1.41e-16   31206.981 - 6.78e-26   33359.950 -  8.1e-36
+JTTDCMut+F+I+I+R3  -14779.840   30605.679 -  8.5e-17   31207.991 - 4.09e-26   33360.960 - 4.89e-36
+JTT+F+R3         -14783.967   30611.934 - 3.73e-18   31211.288 - 7.87e-27   33361.946 - 2.98e-36
+JTTDCMut+F+R3    -14784.691   30613.383 - 1.81e-18   31212.737 - 3.81e-27   33363.395 - 1.45e-36
+LG+F+I+I+R3      -14785.245   30616.491 - 3.82e-19   31218.803 - 1.84e-28   33371.772 - 2.19e-38
+JTT+F+I+I+R4     -14778.684   30607.368 - 3.65e-17   31215.627 - 8.99e-28   33373.185 - 1.08e-38
+LG+F+R3          -14790.211   30624.423 - 7.23e-21   31223.777 - 1.53e-29   33374.435 - 5.79e-39
+JTTDCMut+F+I+I+R4  -14779.348   30608.696 - 1.88e-17   31216.955 - 4.63e-28   33374.513 - 5.57e-39
+LG+F+I+I+R4      -14781.852   30613.704 - 1.54e-18   31221.964 - 3.78e-29   33379.521 - 4.56e-40
+Q.pfam+F+I+I+R3  -14796.145   30638.291 - 7.04e-24   31240.603 - 3.39e-33   33393.572 - 4.05e-43
+Q.pfam+F+I+I+R4  -14789.839   30629.678 - 5.22e-22   31237.938 - 1.29e-32   33395.496 - 1.55e-43
+Q.pfam+F+R3      -14800.853   30645.705 - 1.73e-25   31245.060 - 3.65e-34   33395.718 - 1.39e-43
+WAG+I+I+R3       -14872.578   30753.155 - 8.04e-49   31301.099 - 2.48e-46   33408.339 - 2.52e-46
+WAG+R3           -14879.209   30764.418 - 2.88e-51   31309.605 - 3.52e-48   33414.334 - 1.26e-47
+WAG+I+I+R4       -14871.780   30755.559 - 2.42e-49   31309.048 - 4.65e-48   33421.280 -  3.9e-49
+Q.mammal+I+I+R3  -14907.702   30823.404 - 4.48e-64   31371.348 - 1.38e-61   33478.588 -  1.4e-61
+Q.mammal+R3      -14911.860   30829.721 -  1.9e-65   31374.908 - 2.33e-62   33479.637 - 8.29e-62
+Dayhoff+F+I+I+R3  -14840.785   30727.570 - 2.89e-43   31329.882 - 1.39e-52   33482.850 - 1.66e-62
+DCMut+F+I+I+R3   -14842.455   30730.909 - 5.45e-44   31333.221 - 2.62e-53   33486.190 - 3.13e-63
+LG+G4            -14926.362   30852.724 - 1.92e-70   31389.701 - 1.43e-65   33486.835 - 2.27e-63
+Q.mammal+I+I+R4  -14907.251   30826.502 - 9.52e-65   31379.990 - 1.83e-63   33492.222 - 1.53e-64
+Dayhoff+F+R3     -14849.492   30742.984 -  1.3e-46   31342.339 - 2.75e-55   33492.997 - 1.04e-64
+WAG+F+I+I+R3     -14846.635   30739.269 - 8.33e-46   31341.582 - 4.01e-55   33494.550 - 4.79e-65
+DCMut+F+R3       -14851.028   30746.055 -  2.8e-47   31345.410 - 5.91e-56   33496.068 - 2.24e-65
+Dayhoff+F+I+I+R4  -14840.337   30730.674 - 6.13e-44   31338.934 - 1.51e-54   33496.491 - 1.82e-65
+WAG+F+R3         -14852.750   30749.499 -    5e-48   31348.854 - 1.06e-56   33499.512 - 4.01e-66
+DCMut+F+I+I+R4   -14842.000   30734.000 - 1.16e-44   31342.260 - 2.86e-55   33499.817 - 3.44e-66
+Dayhoff+I+I+R3   -14922.097   30852.194 - 2.51e-70   31400.138 - 7.72e-68   33507.378 - 7.85e-68
+WAG+F+I+I+R4     -14845.883   30741.766 - 2.39e-46   31350.026 - 5.88e-57   33507.583 - 7.08e-68
+DCMut+I+I+R3     -14924.230   30856.460 - 2.97e-71   31404.404 - 9.15e-69   33511.645 - 9.29e-69
+Dayhoff+R3       -14929.963   30865.926 - 2.62e-73   31411.113 -  3.2e-70   33515.842 - 1.14e-69
+DCMut+R3         -14931.993   30869.986 - 3.43e-74   31415.173 -  4.2e-71   33519.902 -  1.5e-70
+rtREV+F+I+I+R3   -14859.334   30764.669 - 2.54e-51   31366.981 - 1.22e-60   33519.950 - 1.46e-70
+Dayhoff+I+I+R4   -14921.477   30854.955 - 6.31e-71   31408.443 - 1.21e-69   33520.675 - 1.02e-70
+DCMut+I+I+R4     -14923.610   30859.220 - 7.48e-72   31412.708 - 1.44e-70   33524.941 - 1.21e-71
+rtREV+F+I+I+R4   -14854.609   30759.217 - 3.88e-50   31367.477 - 9.55e-61   33525.034 - 1.15e-71
+rtREV+F+R3       -14866.043   30776.085 - 8.44e-54   31375.440 - 1.78e-62   33526.098 - 6.76e-72
+VT+I+I+R3        -14933.342   30874.684 - 3.28e-75   31422.628 - 1.01e-72   33529.868 - 1.03e-72
+Q.mammal+F+I+I+R3  -14864.319   30774.639 - 1.74e-53   31376.951 - 8.37e-63   33529.920 -    1e-72
+Q.mammal+F+R3    -14868.658   30781.316 - 6.17e-55   31380.671 -  1.3e-63   33531.329 - 4.94e-73
+VT+R3            -14938.470   30882.940 - 5.28e-77   31428.127 - 6.46e-74   33532.856 -  2.3e-73
+mtInv+F+I+I+R3   -14865.865   30777.731 - 3.71e-54   31380.043 - 1.78e-63   33533.011 - 2.13e-73
+mtInv+F+I+I+R4   -14859.270   30768.541 - 3.67e-52   31376.801 - 9.02e-63   33534.358 - 1.09e-73
+mtInv+F+R3       -14873.941   30791.882 - 3.13e-57   31391.236 - 6.62e-66   33541.894 - 2.51e-75
+Q.mammal+F+I+I+R4  -14863.474   30776.948 - 5.48e-54   31385.208 - 1.35e-64   33542.765 - 1.62e-75
+VT+I+I+R4        -14932.881   30877.763 - 7.03e-76   31431.251 - 1.35e-74   33543.483 - 1.13e-75
+cpREV+F+I+I+R3   -14874.502   30795.004 - 6.58e-58   31397.316 - 3.17e-67   33550.285 - 3.78e-77
+cpREV+I+I+R3     -14945.787   30899.575 - 1.29e-80   31447.519 - 3.97e-78   33554.759 - 4.04e-78
+cpREV+R3         -14949.456   30904.913 - 8.95e-82   31450.100 - 1.09e-78   33554.829 -  3.9e-78
+cpREV+F+R3       -14880.685   30805.371 - 3.69e-60   31404.725 - 7.79e-69   33555.383 - 2.95e-78
+cpREV+F+I+I+R4   -14874.014   30798.028 - 1.45e-58   31406.287 - 3.57e-69   33563.845 -  4.3e-80
+LG+R2            -14961.500   30925.001 - 3.89e-86   31464.705 - 7.37e-82   33564.381 - 3.29e-80
+cpREV+I+I+R4     -14945.358   30902.717 - 2.68e-81   31456.206 - 5.16e-80   33568.438 - 4.32e-81
+mtMet+F+I+I+R4   -14876.845   30803.690 - 8.55e-60   31411.950 -  2.1e-70   33569.507 - 2.53e-81
+mtMet+F+I+I+R3   -14886.273   30818.546 - 5.08e-63   31420.858 - 2.45e-72   33573.826 - 2.92e-82
+mtMet+F+R3       -14895.577   30835.155 - 1.26e-66   31434.509 - 2.66e-75   33585.167 - 1.01e-84
+mtZOA+F+I+I+R4   -14888.353   30826.707 - 8.59e-65   31434.967 - 2.11e-75   33592.524 - 2.54e-86
+Q.bird+I+I+R3    -14965.396   30938.793 - 3.93e-89   31486.737 - 1.21e-86   33593.977 - 1.23e-86
+Q.bird+R3        -14969.688   30945.377 - 1.46e-90   31490.564 - 1.79e-87   33595.293 - 6.37e-87
+mtZOA+F+I+I+R3   -14898.934   30843.867 - 1.61e-68   31446.179 - 7.76e-78   33599.148 - 9.27e-88
+Q.bird+I+I+R4    -14964.877   30941.754 - 8.95e-90   31495.242 - 1.72e-88   33607.475 - 1.44e-89
+mtZOA+F+R3       -14909.106   30862.211 - 1.68e-72   31461.566 - 3.54e-81   33612.224 - 1.34e-90
+VT+F+I+I+R3      -14909.279   30864.558 - 5.18e-73   31466.870 -  2.5e-82   33619.839 - 2.98e-92
+VT+F+R3          -14914.320   30872.640 - 9.11e-75   31471.995 - 1.92e-83   33622.653 -  7.3e-93
+VT+F+I+I+R4      -14908.806   30867.613 - 1.13e-73   31475.873 - 2.77e-84   33633.430 - 3.33e-95
+Q.bird+F+I+I+R3  -14932.637   30911.275 - 3.72e-83   31513.587 - 1.79e-92   33666.556 - 2.14e-102
+Q.bird+F+R3      -14937.197   30918.393 - 1.06e-84   31517.748 - 2.23e-93   33668.405 - 8.47e-103
+FLU+F+I+I+R4     -14928.806   30907.611 - 2.32e-82   31515.871 - 5.71e-93   33673.428 - 6.88e-104
+FLU+F+I+I+R3     -14937.462   30920.924 - 2.98e-85   31523.236 - 1.44e-94   33676.205 - 1.72e-104
+FLU+R3           -15010.633   31027.266 - 2.42e-108   31572.453 - 2.95e-105   33677.182 - 1.05e-104
+FLU+I+I+R3       -15007.466   31022.932 - 2.11e-107   31570.876 - 6.49e-105   33678.116 - 6.6e-105
+Q.bird+F+I+I+R4  -14931.478   30912.957 -  1.6e-83   31521.216 - 3.94e-94   33678.774 - 4.75e-105
+FLU+F+R3         -14942.702   30929.404 -  4.3e-87   31528.759 - 9.08e-96   33679.416 - 3.44e-105
+FLU+I+I+R4       -15006.804   31025.607 - 5.54e-108   31579.096 - 1.07e-106   33691.328 - 8.92e-108
+rtREV+I+I+R3     -15014.119   31036.237 - 2.72e-110   31584.181 - 8.38e-108   33691.422 - 8.51e-108
+rtREV+R3         -15018.906   31043.813 - 6.16e-112   31589.000 - 7.53e-109   33693.729 - 2.69e-108
+rtREV+I+I+R4     -15008.093   31028.187 - 1.52e-108   31581.675 - 2.93e-107   33693.907 - 2.46e-108
+mtREV+F+I+I+R3   -14963.429   30972.859 - 1.58e-96   31575.171 - 7.58e-106   33728.140 - 9.06e-116
+mtREV+F+I+I+R4   -14962.460   30974.920 - 5.62e-97   31583.180 - 1.38e-107   33740.737 - 1.67e-118
+mtREV+F+R3       -14976.422   30996.845 - 9.75e-102   31596.199 - 2.06e-110   33746.857 - 7.81e-120
+mtVer+F+I+I+R4   -14965.867   30981.734 - 1.86e-98   31589.994 - 4.58e-109   33747.551 - 5.52e-120
+mtVer+F+I+I+R3   -14976.259   30998.517 - 4.22e-102   31600.829 - 2.03e-111   33753.798 - 2.43e-121
+mtVer+F+R3       -14986.968   31017.936 - 2.56e-106   31617.290 - 5.42e-115   33767.948 - 2.05e-124
+HIVb+F+I+I+R3    -15002.369   31050.738 - 1.93e-113   31653.050 - 9.3e-123   33806.019 - 1.11e-132
+HIVb+F+I+I+R4    -15002.012   31054.024 - 3.74e-114   31662.284 - 9.19e-125   33819.841 - 1.11e-135
+HIVb+F+R3        -15013.125   31070.251 - 1.12e-117   31669.605 - 2.36e-126   33820.263 - 8.97e-136
+HIVb+I+I+R3      -15087.591   31183.182 - 3.36e-142   31731.126 - 1.03e-139   33838.367 - 1.05e-139
+HIVb+R3          -15096.560   31199.121 - 1.16e-145   31744.308 - 1.42e-142   33849.037 - 5.06e-142
+HIVb+I+I+R4      -15087.261   31186.523 - 6.32e-143   31740.011 - 1.22e-141   33852.244 - 1.02e-142
+mtART+F+I+I+R4   -15055.583   31161.166 - 2.03e-137   31769.426 - 4.99e-148   33926.983 - 6.01e-159
+mtART+F+I+I+R3   -15065.072   31176.144 - 1.13e-140   31778.457 - 5.46e-150   33931.425 - 6.52e-160
+PMB+F+I+I+R3     -15065.126   31176.252 - 1.07e-140   31778.564 - 5.17e-150   33931.532 - 6.18e-160
+PMB+F+R3         -15071.046   31186.092 - 7.84e-143   31785.446 - 1.66e-151   33936.104 - 6.28e-161
+Blosum62+I+I+R3  -15139.066   31286.131 - 1.48e-164   31834.075 - 4.57e-162   33941.315 - 4.64e-162
+PMB+F+I+I+R4     -15064.360   31178.720 - 3.13e-141   31786.980 - 7.69e-152   33944.537 - 9.27e-163
+Blosum62+R3      -15144.636   31295.273 - 1.54e-166   31840.460 - 1.88e-163   33945.189 - 6.69e-163
+LG+I             -15158.429   31316.857 - 3.16e-171   31853.835 - 2.34e-166   33950.969 - 3.72e-164
+Blosum62+I+I+R4  -15138.104   31288.209 - 5.25e-165   31841.697 - 1.01e-163   33953.929 - 8.46e-165
+PMB+I+I+R3       -15145.824   31299.648 - 1.72e-167   31847.592 - 5.3e-165   33954.832 - 5.39e-165
+PMB+R3           -15151.718   31309.435 - 1.29e-169   31854.622 - 1.58e-166   33959.351 - 5.62e-166
+PMB+I+I+R4       -15144.938   31301.876 - 5.65e-168   31855.365 - 1.09e-166   33967.597 - 9.11e-168
+Blosum62+F+I+I+R3  -15083.213   31212.427 - 1.5e-148   31814.739 - 7.22e-158   33967.708 - 8.62e-168
+mtART+F+R3       -15087.075   31218.150 - 8.57e-150   31817.505 - 1.81e-158   33968.163 - 6.86e-168
+Blosum62+F+R3    -15088.478   31220.956 - 2.11e-150   31820.311 - 4.45e-159   33970.969 - 1.69e-168
+Blosum62+F+I+I+R4  -15082.439   31214.878 - 4.4e-149   31823.138 - 1.08e-159   33980.696 - 1.3e-170
+FLAVI+F+I+I+R4   -15091.758   31233.515 - 3.95e-153   31841.775 - 9.72e-164   33999.332 - 1.17e-174
+FLAVI+F+I+I+R3   -15102.814   31251.628 - 4.61e-157   31853.941 - 2.22e-166   34006.909 - 2.65e-176
+FLAVI+F+R3       -15107.193   31258.386 - 1.57e-158   31857.740 - 3.32e-167   34008.398 - 1.26e-176
+FLAVI+I+I+R4     -15180.159   31372.319 - 2.86e-183   31925.807 - 5.5e-182   34038.039 - 4.6e-183
+FLAVI+R3         -15199.038   31404.077 - 3.63e-190   31949.264 - 4.43e-187   34053.993 - 1.58e-186
+FLAVI+I+I+R3     -15195.894   31399.787 - 3.1e-189   31947.731 - 9.54e-187   34054.972 - 9.69e-187
+mtMAM+F+I+I+R4   -15126.186   31302.372 - 4.41e-168   31910.632 - 1.09e-178   34068.189 - 1.31e-189
+mtMAM+F+I+I+R3   -15138.808   31323.617 - 1.07e-172   31925.929 - 5.17e-182   34078.898 - 6.18e-192
+mtMAM+F+R3       -15164.507   31373.013 - 2.02e-183   31972.368 - 4.26e-192   34123.025 - 1.62e-201
+HIVw+F+I+I+R3    -15355.820   31757.641 - 6.08e-267   32359.953 - 2.93e-276   34512.921 - 3.5e-286
+mtZOA+I+I+R4     -15418.569   31849.138 - 8.24e-287   32402.627 - 1.59e-285   34514.859 - 1.33e-286
+HIVw+F+R3        -15360.926   31765.851 -   1e-268   32365.206 - 2.12e-277   34515.864 - 8.03e-287
+mtZOA+I+I+R3     -15429.617   31867.234 - 9.69e-291   32415.178 - 2.98e-288   34522.419 - 3.03e-288
+HIVw+F+I+I+R4    -15355.676   31761.353 - 9.51e-268   32369.613 - 2.34e-278   34527.170 - 2.82e-289
+mtZOA+R3         -15453.637   31913.275 - 9.74e-301   32458.462 - 1.19e-297   34563.191 - 4.25e-297
+HIVw+I+I+R3      -15551.811   32111.621 -        0   32659.565 -        0   34766.806 -        0
+HIVw+R3          -15558.698   32123.396 -        0   32668.583 -        0   34773.312 -        0
+HIVw+I+I+R4      -15551.356   32114.712 -        0   32668.201 -        0   34780.433 -        0
+mtMet+I+I+R4     -15579.017   32170.033 -        0   32723.522 -        0   34835.754 -        0
+mtMet+I+I+R3     -15589.661   32187.322 -        0   32735.266 -        0   34842.506 -        0
+mtMet+R3         -15607.274   32220.548 -        0   32765.735 -        0   34870.464 -        0
+mtVer+I+I+R4     -15660.169   32332.337 -        0   32885.826 -        0   34998.058 -        0
+mtVer+I+I+R3     -15670.616   32349.231 -        0   32897.175 -        0   35004.416 -        0
+mtREV+I+I+R4     -15672.892   32357.785 -        0   32911.274 -        0   35023.506 -        0
+mtREV+I+I+R3     -15689.086   32386.172 -        0   32934.116 -        0   35041.356 -        0
+mtVer+R3         -15692.782   32391.564 -        0   32936.751 -        0   35041.480 -        0
+mtInv+I+I+R4     -15687.422   32386.844 -        0   32940.332 -        0   35052.564 -        0
+mtInv+I+I+R3     -15697.863   32403.726 -        0   32951.670 -        0   35058.910 -        0
+mtREV+R3         -15702.963   32411.927 -        0   32957.114 -        0   35061.843 -        0
+mtART+I+I+R4     -15695.907   32403.815 -        0   32957.304 -        0   35069.536 -        0
+mtART+I+I+R3     -15706.358   32420.717 -        0   32968.661 -        0   35075.901 -        0
+mtInv+R3         -15712.771   32431.543 -        0   32976.730 -        0   35081.459 -        0
+mtART+R3         -15743.660   32493.320 -        0   33038.507 -        0   35143.236 -        0
+mtMAM+I+I+R4     -15828.264   32668.528 -        0   33222.017 -        0   35334.249 -        0
+mtMAM+I+I+R3     -15840.841   32689.683 -        0   33237.627 -        0   35344.867 -        0
+mtMAM+R3         -15891.433   32788.866 -        0   33334.053 -        0   35438.782 -        0
+LG               -16295.174   33588.347 -        0   34122.609 -        0   36217.191 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.plant+I+I+R3
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+Invar+FreeRate with 3 categories
+Proportion of invariable sites: 0.5704
+Site proportion and rates:  (0.2580,0.5756) (0.1289,3.2032) (0.0427,10.2745)
+
+ Category  Relative_rate  Proportion
+  0         0              0.5704
+  1         0.5756         0.2580
+  2         3.2032         0.1289
+  3         10.2745        0.0427
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -14689.9809 (s.e. 567.6969)
+Unconstrained log-likelihood (without tree): -6562.9740
+Number of free parameters (#branches + #model parameters): 504
+Akaike information criterion (AIC) score: 30387.9618
+Corrected Akaike information criterion (AICc) score: 30935.9058
+Bayesian information criterion (BIC) score: 33043.1462
+
+Total tree length (sum of branch lengths): 1.5400
+Sum of internal branch lengths: 0.8046 (52.2440% of tree length)
+
+WARNING: 116 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AHW74480_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**AHW74480_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|
+|                                         +--WP_050178255_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      +**| (28)
+|                                      |  |  +**WP_127238859_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |  +--| (88)
+|                                      |     |              +**WP_013448207_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |           +--| (50)
+|                                      |     |           |  +--WP_036475237_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        +--| (99)
+|                                      |     |        |  |                 +**WP_115178225_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  |              +**| (10)
+|                                      |     |        |  |              |  |  +--WP_118810593_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  |              |  +**| (20)
+|                                      |     |        |  |              |     +--WP_118778594_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  |           +**| (19)
+|                                      |     |        |  |           |  +--WP_118783883_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  |        +--| (37)
+|                                      |     |        |  |        |  +--WP_003713294_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  |     +--| (79)
+|                                      |     |        |  |     |  |  +--WP_118847179_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  |     |  +**| (91)
+|                                      |     |        |  |     |     +--WP_096108461_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  |  +**| (9)
+|                                      |     |        |  |  |  +--WP_118788062_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  +**| (12)
+|                                      |     |        |     +**WP_118783140_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |     +--| (89)
+|                                      |     |     |  +--WP_107863913_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_polysaccharea
+|                                      |     |  +**| (66)
+|                                      |     |  |  |  +**WP_118816456_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |  |  +--| (97)
+|                                      |     |  |     +--WP_118780593_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     +--| (65)
+|                                      |        |  +--WP_118821336_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |        +--| (58)
+|                                      |           |  +--WP_127219978_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |           +--| (84)
+|                                      |              |  +--MCL4978381_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |              +--| (94)
+|                                      |                 |                                                  +**WP_036491331_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                 |                                               +**| (82)
+|                                      |                 |                                               |  |  +--MBY6286503_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                                               |  +**| (66)
+|                                      |                 |                                               |     |  +**OHR16733_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC078C12
+|                                      |                 |                                               |     +--| (100)
+|                                      |                 |                                               |        |  +--MCL9791895_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                                               |        +**| (70)
+|                                      |                 |                                               |           +--MBF1271133_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                 |                                            +--| (91)
+|                                      |                 |                                            |  +**VTY02445_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                                         +**| (86)
+|                                      |                 |                                         |  +**EFV79787_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa_C102
+|                                      |                 |                                      +--| (96)
+|                                      |                 |                                      |  +**WP_036494041_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                 |                                   +--| (100)
+|                                      |                 |                                   |  +**MBD0771641_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_RH3002v2g
+|                                      |                 |                                +--| (47)
+|                                      |                 |                                |  +**KZC76029_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens
+|                                      |                 |                             +**| (32)
+|                                      |                 |                             |  +--EER55601_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens_SK114
+|                                      |                 |                          +--| (47)
+|                                      |                 |                          |  |  +**OFM32478_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC068C04
+|                                      |                 |                          |  +**| (55)
+|                                      |                 |                          |     |  +--MCL9779564_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                          |     +**| (49)
+|                                      |                 |                          |        |  +**MCL9764968_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                          |        +--| (90)
+|                                      |                 |                          |           +--MBD0769656_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_KH1003_01
+|                                      |                 |                       +**| (36)
+|                                      |                 |                       |  |           +**WP_004521091_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria
+|                                      |                 |                       |  |        +--| (96)
+|                                      |                 |                       |  |        |  +--WP_249551838_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_perflava
+|                                      |                 |                       |  |     +**| (56)
+|                                      |                 |                       |  |     |  +--UTG69673_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                       |  |  +--| (60)
+|                                      |                 |                       |  |  |  +--KZC82653_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens
+|                                      |                 |                       |  +--| (60)
+|                                      |                 |                       |     +**KZC86539_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens
+|                                      |                 |                    +**| (18)
+|                                      |                 |                    |  +**WP_107960880_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_cinerea
+|                                      |                 |                 +**| (21)
+|                                      |                 |                 |  +--WP_039863992_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_flavescens
+|                                      |                 |              +--| (38)
+|                                      |                 |              |  |     +**WP_039854740_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_cinerea
+|                                      |                 |              |  |  +--| (99)
+|                                      |                 |              |  |  |  +**EEZ70999_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_cinerea_ATCC_14685
+|                                      |                 |              |  +--| (99)
+|                                      |                 |              |     +--UTG74580_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |           +**| (25)
+|                                      |                 |           |  |              +**OFK84964_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC061E12
+|                                      |                 |           |  |           +--| (82)
+|                                      |                 |           |  |           |  +--VTX71728_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |           |  |        +**| (52)
+|                                      |                 |           |  |        |  +**OFO66788_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC065C04
+|                                      |                 |           |  |     +--| (95)
+|                                      |                 |           |  |     |  +--MBS5742110_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                 |           |  |  +--| (73)
+|                                      |                 |           |  |  |  +**MBF1296049_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |                 |           |  +--| (56)
+|                                      |                 |           |     +**WP_070624754_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC063B05
+|                                      |                 |        +--| (35)
+|                                      |                 |        |  +**MBF1301413_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                 |     +**| (19)
+|                                      |                 |     |  +**OFR81995_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC073G10
+|                                      |                 |  +--| (93)
+|                                      |                 |  |  |  +**OHP61642_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC061H08
+|                                      |                 |  |  +--| (56)
+|                                      |                 |  |     +--MBF1278349_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                 +--| (98)
+|                                      |                    |                 +**WP_049227159_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |              +**| (3)
+|                                      |                    |              |  |  +--EGY59291_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_GT4A_CT1
+|                                      |                    |              |  +**| (11)
+|                                      |                    |              |     +--OFN87227_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC064E01
+|                                      |                    |           +**| (11)
+|                                      |                    |           |  |  +--WP_107814201_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |           |  +**| (3)
+|                                      |                    |           |     |        +--WP_060975723_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                    |           |     |     +--| (67)
+|                                      |                    |           |     |     |  +--WP_003760502_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |           |     |  +**| (53)
+|                                      |                    |           |     |  |  +--OHR76755_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC70E02
+|                                      |                    |           |     +--| (53)
+|                                      |                    |           |        +--OFO37493_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC065D04
+|                                      |                    |        +--| (50)
+|                                      |                    |        |  +--WP_204828228_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |     +**| (35)
+|                                      |                    |     |  +--WP_003742650_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseriaceae
+|                                      |                    |  +--| (100)
+|                                      |                    |  |  |                                +**WP_039409753_DNA_directed_RNA_polymerase_subunit_beta_Morococcus_cerebrosus
+|                                      |                    |  |  |                             +--| (52)
+|                                      |                    |  |  |                             |  |  +--KJJ20238_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_sp_HMSC06F02
+|                                      |                    |  |  |                             |  +**| (54)
+|                                      |                    |  |  |                             |     +--AVR79988_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                    |  |  |                          +--| (71)
+|                                      |                    |  |  |                          |  +**WP_003779773_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_macacae
+|                                      |                    |  |  |                       +**| (51)
+|                                      |                    |  |  |                       |  |     +**WP_070441377_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |                       |  |  +**| (28)
+|                                      |                    |  |  |                       |  |  |  |  +--WP_070857314_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                    |  |  |                       |  |  |  +**| (21)
+|                                      |                    |  |  |                       |  |  |     +--WP_070538906_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |                       |  +**| (14)
+|                                      |                    |  |  |                       |     +--OHR42300_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC071B12
+|                                      |                    |  |  |                    +**| (2)
+|                                      |                    |  |  |                    |  |  +--WP_016686980_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |                    |  +**| (17)
+|                                      |                    |  |  |                    |     +--WP_070491699_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                    |  |  |                 +**| (3)
+|                                      |                    |  |  |                 |  +**OFN27192_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC077D05
+|                                      |                    |  |  |              +--| (70)
+|                                      |                    |  |  |              |  +--WP_009175236_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_oral_taxon_014
+|                                      |                    |  |  |           +**| (48)
+|                                      |                    |  |  |           |  +--OFN00094_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC055F11
+|                                      |                    |  |  |        +--| (60)
+|                                      |                    |  |  |        |  +--MBS6045508_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                    |  |  |     +**| (24)
+|                                      |                    |  |  |     |  |  +**WP_070654428_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |     |  +--| (99)
+|                                      |                    |  |  |     |     +--WP_146736155_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |  +--| (58)
+|                                      |                    |  |  |  |  +--WP_019270606_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  +--| (50)
+|                                      |                    |  |     +--WP_107824887_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    +--| (53)
+|                                      |                       |     +**WP_165090205_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_ZJ930
+|                                      |                       |  +--| (100)
+|                                      |                       |  |  +--WP_165011005_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_ZJ785
+|                                      |                       +--| (100)
+|                                      |                          |        +--WP_066077701_DNA_directed_RNA_polymerase_subunit_beta_Bergeriella_denitrificans
+|                                      |                          |     +--| (99)
+|                                      |                          |     |  +--WP_253354158_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_perflava
+|                                      |                          |  +--| (96)
+|                                      |                          |  |  |                       +--WP_115134940_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_zoodegmatis
+|                                      |                          |  |  |                    +--| (98)
+|                                      |                          |  |  |                    |  +--WP_244740835_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_Dent_CA1
+|                                      |                          |  |  |                 +--| (100)
+|                                      |                          |  |  |                 |  +--WP_085363448_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_zoodegmatis
+|                                      |                          |  |  |              +--| (100)
+|                                      |                          |  |  |              |  |     +--WP_085359773_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dumasiana
+|                                      |                          |  |  |              |  |  +--| (97)
+|                                      |                          |  |  |              |  |  |  +**WP_054599431_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria
+|                                      |                          |  |  |              |  +--| (100)
+|                                      |                          |  |  |              |     +--WP_085356961_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dumasiana
+|                                      |                          |  |  |           +--| (100)
+|                                      |                          |  |  |           |  +--WP_126300855_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_animaloris
+|                                      |                          |  |  |        +--| (98)
+|                                      |                          |  |  |        |  +---WP_259292195_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_CSL10203_ORH2
+|                                      |                          |  |  |     +--| (100)
+|                                      |                          |  |  |     |  |  +--WP_257067527_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dentiae
+|                                      |                          |  |  |     |  +--| (100)
+|                                      |                          |  |  |     |     +--WP_085366667_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dentiae
+|                                      |                          |  |  |  +--| (91)
+|                                      |                          |  |  |  |  |            +--WP_009117517_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_wadsworthii
+|                                      |                          |  |  |  |  |         +--| (100)
+|                                      |                          |  |  |  |  |         |  +--WP_107688710_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_wadsworthii
+|                                      |                          |  |  |  |  |      +--| (100)
+|                                      |                          |  |  |  |  |      |  +--WP_054617477_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_83E34
+|                                      |                          |  |  |  |  |  +---| (100)
+|                                      |                          |  |  |  |  |  |   +--WP_085416404_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_canis
+|                                      |                          |  |  |  |  +--| (94)
+|                                      |                          |  |  |  |     |           +**WP_182122044_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_shayeganii
+|                                      |                          |  |  |  |     |   +-------| (100)
+|                                      |                          |  |  |  |     |   |       +--WP_009119203_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_shayeganii
+|                                      |                          |  |  |  |     +---| (100)
+|                                      |                          |  |  |  |         |                           +--WP_277074835_DNA_directed_RNA_polymerase_subunit_beta_Simonsiella_muelleri
+|                                      |                          |  |  |  |         |                     +-----| (100)
+|                                      |                          |  |  |  |         |                     |     +--WP_002642347_DNA_directed_RNA_polymerase_subunit_beta_Simonsiella_muelleri
+|                                      |                          |  |  |  |         |                 +---| (87)
+|                                      |                          |  |  |  |         |                 |   |        +**WP_249444214_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   |  +-----| (100)
+|                                      |                          |  |  |  |         |                 |   |  |     |  +--WP_249450670_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   |  |     +--| (75)
+|                                      |                          |  |  |  |         |                 |   |  |        |     +--WP_249446984_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   |  |        |  +--| (75)
+|                                      |                          |  |  |  |         |                 |   |  |        |  |  +**WP_249442738_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   |  |        +--| (75)
+|                                      |                          |  |  |  |         |                 |   |  |           +--WP_249448742_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   +--| (87)
+|                                      |                          |  |  |  |         |                 |      +--WP_034294592_DNA_directed_RNA_polymerase_subunit_beta_Alysiella_crassa
+|                                      |                          |  |  |  |         |             +---| (99)
+|                                      |                          |  |  |  |         |             |   +----WP_097115193_DNA_directed_RNA_polymerase_subunit_beta_Alysiella_filiformis
+|                                      |                          |  |  |  |         |        +----| (100)
+|                                      |                          |  |  |  |         |        |    |  +---------Unknown_Kingella_kingae
+|                                      |                          |  |  |  |         |        |    +--| (98)
+|                                      |                          |  |  |  |         |        |       +---------------------MBQ9601984_DNA_directed_RNA_polymerase_subunit_beta_Neisseriaceae_bacterium
+|                                      |                          |  |  |  |         +--------| (100)
+|                                      |                          |  |  |  |                  |          +**WP_027022395_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_steedae
+|                                      |                          |  |  |  |                  |      +---| (100)
+|                                      |                          |  |  |  |                  |      |   +--WP_124794470_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_steedae
+|                                      |                          |  |  |  |                  +------| (100)
+|                                      |                          |  |  |  |                         +------WP_027009793_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_kuhniae
+|                                      |                          |  |  +--| (100)
+|                                      |                          |  |     +-----WP_047761757_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_arctica
+|                                      |                          +--| (100)
+|                                      |                             +--WP_089035915_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_chenwenguii
+|                                   +**| (26)
+|                                   |  +--WP_050174080_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                +**| (9)
+|                                |  +--WP_050183641_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                             +**| (6)
+|                             |  +--WP_050305409_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                          +**| (4)
+|                          |  +--WP_105182946_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                       +**| (6)
+|                       |  +**WP_002236600_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                    +**| (12)
+|                    |  +--WP_050182560_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                 +**| (3)
+|                 |  +--WP_055406423_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|              +**| (12)
+|              |  +--WP_050176886_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           +**| (2)
+|           |  +--WP_127275093_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        +**| (7)
+|        |  +--WP_050389066_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|     +**| (11)
+|     |  +--WP_050169189_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  +**| (36)
+|  |  +--WP_002249215_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
++**| (38)
+|  |                       +--WP_061696655_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |                    +--| (75)
+|  |                    |  +**WP_096100990_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |                 +**| (8)
+|  |                 |  +--WP_118827897_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |              +**| (15)
+|  |              |  +**WP_002255629_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |           +--| (44)
+|  |           |  +--WP_101106728_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |        +**| (20)
+|  |        |  +--WP_124203625_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |     +**| (25)
+|  |     |  +--WP_101126412_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |  +**| (25)
+|  |  |  +**WP_061705101_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  +--| (70)
+|     +--WP_124201832_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|
+|              +--WP_101129885_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           +--| (48)
+|           |  |                                                                    +--WP_115155460_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                                                 +**| (19)
+|           |  |                                                                 |  +--WP_148080949_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                                              +**| (36)
+|           |  |                                                              |  +**WP_002228870_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                                           +--| (81)
+|           |  |                                                           |  +--WP_101120335_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                                        +--| (49)
+|           |  |                                                        |  +--WP_196979384_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                                     +**| (27)
+|           |  |                                                     |  +--WP_196978806_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                                  +--| (69)
+|           |  |                                                  |  +**WP_080541899_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               +**| (13)
+|           |  |                                               |  |                                +--WP_061385077_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                             +--| (73)
+|           |  |                                               |  |                             |  +--WP_219221988_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                          +**| (6)
+|           |  |                                               |  |                          |  +--WP_127254448_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                       +**| (72)
+|           |  |                                               |  |                       |  +**WP_127224883_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    +--| (8)
+|           |  |                                               |  |                    |  |  +**WP_061826000_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    |  +--| (72)
+|           |  |                                               |  |                    |     |                 +--WP_061728965_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    |     |              +--| (82)
+|           |  |                                               |  |                    |     |              |  +**WP_002223293_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    |     |           +**| (7)
+|           |  |                                               |  |                    |     |           |  +--WP_061726693_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    |     |        +**| (4)
+|           |  |                                               |  |                    |     |        |  +--WP_021437891_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    |     |     +**| (4)
+|           |  |                                               |  |                    |     |     |  +**WP_014575103_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    |     |  +**| (14)
+|           |  |                                               |  |                    |     |  |  |  +--WP_127207396_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    |     |  |  +**| (14)
+|           |  |                                               |  |                    |     |  |     +--WP_118832484_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                    |     +--| (16)
+|           |  |                                               |  |                    |        +--WP_002247736_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |                 +--| (7)
+|           |  |                                               |  |                 |  +**WP_101065769_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |              +**| (5)
+|           |  |                                               |  |              |  |        +--WP_039638097_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |              |  |     +--| (100)
+|           |  |                                               |  |              |  |     |  |  +**AAF40591_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_meningitidis_MC58
+|           |  |                                               |  |              |  |     |  +**| (78)
+|           |  |                                               |  |              |  |     |     +**WP_002224771_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |              |  |  +**| (62)
+|           |  |                                               |  |              |  |  |  +**WP_021437267_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |              |  +--| (85)
+|           |  |                                               |  |              |     +--WP_127232724_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |           +**| (2)
+|           |  |                                               |  |           |  |  +--WP_002240961_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |           |  +--| (99)
+|           |  |                                               |  |           |     +--WP_127202838_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |        +**| (3)
+|           |  |                                               |  |        |  +**WP_002239439_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     +**| (7)
+|           |  |                                               |  |     |  |              +**WP_014573707_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |           +**| (38)
+|           |  |                                               |  |     |  |           |  |        +--WP_002218563_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |           |  |     +**| (23)
+|           |  |                                               |  |     |  |           |  |     |  |     +**WP_025460067_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |           |  |     |  |  +**| (78)
+|           |  |                                               |  |     |  |           |  |     |  |  |  +--WP_101182604_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |           |  |     |  +--| (91)
+|           |  |                                               |  |     |  |           |  |     |     +--WP_242555465_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |           |  |  +**| (28)
+|           |  |                                               |  |     |  |           |  |  |  +**WP_002218421_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |           |  +--| (41)
+|           |  |                                               |  |     |  |           |     +--WP_101133237_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |        +--| (24)
+|           |  |                                               |  |     |  |        |  |  +**WP_050888330_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |        |  +--| (83)
+|           |  |                                               |  |     |  |        |     +--WP_127242969_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |     +**| (10)
+|           |  |                                               |  |     |  |     |  +--WP_118854860_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  |  +**| (10)
+|           |  |                                               |  |     |  |  |  +**WP_019742820_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |  +--| (13)
+|           |  |                                               |  |     |     |     +--WP_219208972_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |     |  +**| (61)
+|           |  |                                               |  |     |     |  |  +**WP_002234460_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |     |     +--| (80)
+|           |  |                                               |  |     |        +--WP_101123983_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |  +--| (23)
+|           |  |                                               |  |  |  |  +--WP_101134577_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  |  |  +--| (85)
+|           |  |                                               |  |  |     +**MCL5819672_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                               |  +**| (20)
+|           |  |                                               |     +--WP_025459350_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                            +**| (2)
+|           |  |                                            |  +--WP_219199987_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                         +**| (4)
+|           |  |                                         |  +--WP_050893208_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                      +**| (5)
+|           |  |                                      |  +--MCL4977048_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                   +**| (1)
+|           |  |                                   |  |  +**MBH2056702_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                   |  +--| (100)
+|           |  |                                   |     +--MBH2162182_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                +**| (8)
+|           |  |                                |  +**WP_017629226_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             +**| (18)
+|           |  |                             |  |     +**WP_219198875_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |  +--| (74)
+|           |  |                             |  |  |  |  +--WP_127207129_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |  |  +**| (66)
+|           |  |                             |  |  |     |  +--WP_021439640_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |  |     +--| (76)
+|           |  |                             |  |  |        +--WP_241499808_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_gonorrhoeae
+|           |  |                             |  +--| (64)
+|           |  |                             |     |     +**WP_101065128_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |     |  +**| (24)
+|           |  |                             |     |  |  |  +--WP_096122624_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |     |  |  +**| (16)
+|           |  |                             |     |  |     +--MBG8643002_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |     +--| (92)
+|           |  |                             |        +--MBJ7849834_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          +--| (29)
+|           |  |                          |  |     +**WP_127214795_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  +**| (37)
+|           |  |                          |  |  |  |  +--WP_015815968_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  |  +**| (16)
+|           |  |                          |  |  |     |     +**WP_002237534_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  |     |  +--| (67)
+|           |  |                          |  |  |     |  |  +--WP_061693478_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  |     +**| (35)
+|           |  |                          |  |  |        |  +--WP_002232264_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  |        +--| (65)
+|           |  |                          |  |  |           +--WP_025457606_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria
+|           |  |                          |  +--| (46)
+|           |  |                          |     |  +**WP_196958784_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |     +--| (46)
+|           |  |                          |        |              +**WP_002243190_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria
+|           |  |                          |        |           +**| (46)
+|           |  |                          |        |           |  |  +--WP_101105695_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |           |  +**| (29)
+|           |  |                          |        |           |     +--WP_101106277_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |        +--| (87)
+|           |  |                          |        |        |  +--WP_101171534_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |     +**| (79)
+|           |  |                          |        |     |  +**WP_118911383_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |  +--| (70)
+|           |  |                          |        |  |  |  +--WP_118830659_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |  |  +--| (97)
+|           |  |                          |        |  |     +--WP_101131295_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        +--| (55)
+|           |  |                          |           |     +**WP_147280603_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |           |  +--| (89)
+|           |  |                          |           |  |  +--WP_050890942_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |           +--| (82)
+|           |  |                          |              +**WP_002221840_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                       +**| (17)
+|           |  |                       |  +--WP_118948605_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                    +**| (18)
+|           |  |                    |  +**WP_096112301_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                 +--| (30)
+|           |  |                 |  |  +**WP_002233412_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                 |  +--| (50)
+|           |  |                 |     +--WP_127220655_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |              +**| (25)
+|           |  |              |  +**WP_002250955_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |           +--| (26)
+|           |  |           |  |  +--WP_127401569_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |           |  +--| (94)
+|           |  |           |     +**WP_219302659_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |        +**| (19)
+|           |  |        |  |  +--WP_118836779_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |        |  +--| (75)
+|           |  |        |     +**WP_127308507_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |     +**| (10)
+|           |  |     |  |  +**WP_127253299_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |     |  +--| (100)
+|           |  |     |     +--WP_127266391_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |  +**| (11)
+|           |  |  |  +**WP_101126723_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  +**| (23)
+|           |     +--MCL5729262_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        +**| (36)
+|        |  |     +--WP_219195755_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        |  |  +**| (69)
+|        |  |  |  |  +--WP_101129295_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        |  |  |  +--| (80)
+|        |  |  |     |  +**WP_002235366_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        |  |  |     +--| (100)
+|        |  |  |        +--WP_239759853_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        |  +--| (76)
+|        |     +**WP_127281858_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|     +**| (24)
+|     |  +**WP_101115884_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  +**| (43)
+|  |  +--MCL6081067_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
++--| (40)
+   |                          +--WP_024464932_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                       +**| (13)
+   |                       |  +--WP_127233377_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                    +**| (14)
+   |                    |  +**WP_002220155_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                 +**| (20)
+   |                 |  |  +--WP_061727831_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                 |  +**| (24)
+   |                 |     |  +**WP_002238605_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                 |     +--| (100)
+   |                 |        +--WP_024497027_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |              +--| (96)
+   |              |  +--WP_002254272_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |           +**| (38)
+   |           |  +--MBH5688057_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |        +**| (9)
+   |        |  +--WP_199204028_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |     +**| (3)
+   |     |  +**WP_002225943_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |  +**| (72)
+   |  |  |  +--WP_101116843_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |  |  +**| (8)
+   |  |     +--WP_118825531_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   +--| (96)
+      +**CAM09442_DNA_directed_RNA_polymerase_beta_chain_Neisseria_meningitidis_FAM18
+
+Tree in newick format:
+
+(AHW74480_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000026375,((((((((((((((WP_050178255_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007516684,(WP_127238859_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000022806,(((((WP_013448207_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0000021151,WP_036475237_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0015373624)50:0.0007679285,((((((WP_115178225_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0000010020,(WP_118810593_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007666145,WP_118778594_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0015420927)20:0.0000022279)10:0.0000026952,WP_118783883_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007669064)19:0.0000024447,WP_003713294_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0030756019)37:0.0007661195,(WP_118847179_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007652774,WP_096108461_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007650404)91:0.0000024952)79:0.0007672505,WP_118788062_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007668243)9:0.0000022008,WP_118783140_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0000010020)12:0.0000022167)99:0.0015475311,WP_107863913_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_polysaccharea:0.0015138581)89:0.0007723317,(WP_118816456_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0000029597,WP_118780593_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007579962)97:0.0007615686)66:0.0002624826,(WP_118821336_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0018633998,(WP_127219978_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0026051403,(MCL4978381_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0064102880,(((((((((((((((((WP_036491331_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0000025741,(MBY6286503_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0014982124,(OHR16733_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC078C12:0.0000025777,(MCL9791895_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0014979371,MBF1271133_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0007502704)70:0.0000028380)100:0.0007482565)66:0.0000024942)82:0.0000025222,VTY02445_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0000022301)91:0.0007232277,EFV79787_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa_C102:0.0000022686)86:0.0000021969,WP_036494041_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0000023112)96:0.0007959803,MBD0771641_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_RH3002v2g:0.0000026101)100:0.0073237952,KZC76029_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens:0.0000021049)47:0.0022020116,EER55601_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens_SK114:0.0021933511)32:0.0000027159,(OFM32478_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC068C04:0.0000020450,(MCL9779564_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0015005389,(MCL9764968_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0000024189,MBD0769656_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_KH1003_01:0.0030147127)90:0.0007506361)49:0.0000023200)55:0.0000021045)47:0.0007328455,((((WP_004521091_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria:0.0000026408,WP_249551838_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_perflava:0.0007500784)96:0.0007536189,UTG69673_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0015102083)56:0.0000024327,KZC82653_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens:0.0007334292)60:0.0007325767,KZC86539_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens:0.0000022597)60:0.0007324789)36:0.0000023715,WP_107960880_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_cinerea:0.0000010020)18:0.0000023652,WP_039863992_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_flavescens:0.0007533833)21:0.0000020767,((WP_039854740_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_cinerea:0.0000022389,EEZ70999_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_cinerea_ATCC_14685:0.0000022069)99:0.0018800455,UTG74580_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0014974735)99:0.0018954132)38:0.0007746908,(((((OFK84964_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC061E12:0.0000025370,VTX71728_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0054904226)82:0.0007486501,OFO66788_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC065C04:0.0000010020)52:0.0000025127,MBS5742110_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0015081377)95:0.0015014042,MBF1296049_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000021513)73:0.0007506413,WP_070624754_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC063B05:0.0000024286)56:0.0007546365)25:0.0000025228,MBF1301413_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0000024589)35:0.0007801140,OFR81995_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC073G10:0.0000026081)19:0.0000024752,(OHP61642_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC061H08:0.0000026102,MBF1278349_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0015221817)56:0.0007598013)93:0.0054666311,((((((WP_049227159_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0000010020,(EGY59291_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_GT4A_CT1:0.0007596880,OFN87227_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC064E01:0.0007595420)11:0.0000023872)3:0.0000024875,(WP_107814201_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007601146,(((WP_060975723_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0007558948,WP_003760502_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007628627)67:0.0007604364,OHR76755_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC70E02:0.0022923409)53:0.0000026533,OFO37493_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC065D04:0.0007611541)53:0.0007615112)3:0.0000022812)11:0.0000024133,WP_204828228_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0015190470)50:0.0007645339,WP_003742650_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseriaceae:0.0007645205)35:0.0000027546,(((((((((((WP_039409753_DNA_directed_RNA_polymerase_subunit_beta_Morococcus_cerebrosus:0.0000029621,(KJJ20238_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_sp_HMSC06F02:0.0007610990,AVR79988_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0022832996)54:0.0000023095)52:0.0007607458,WP_003779773_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_macacae:0.0000022392)71:0.0007600225,((WP_070441377_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0000021971,(WP_070857314_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0007601043,WP_070538906_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0015317553)21:0.0000022932)28:0.0005397402,OHR42300_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC071B12:0.0013891904)14:0.0003526346)51:0.0000021444,(WP_016686980_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007605845,WP_070491699_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0007602826)17:0.0000025069)2:0.0000025115,OFN27192_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC077D05:0.0000010020)3:0.0000025793,WP_009175236_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_oral_taxon_014:0.0007631270)70:0.0007647059,OFN00094_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC055F11:0.0007650263)48:0.0000025662,MBS6045508_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0007643902)60:0.0007656158,(WP_070654428_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0000024808,WP_146736155_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007624155)99:0.0007657018)24:0.0000024287,WP_019270606_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0015324461)58:0.0007677502,WP_107824887_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007702620)50:0.0007651018)100:0.0084155448,((WP_165090205_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_ZJ930:0.0000023579,WP_165011005_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_ZJ785:0.0014940640)100:0.0215872660,(((WP_066077701_DNA_directed_RNA_polymerase_subunit_beta_Bergeriella_denitrificans:0.0238688526,WP_253354158_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_perflava:0.0240124644)99:0.0107731662,((((((((WP_115134940_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_zoodegmatis:0.0012323033,WP_244740835_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_Dent_CA1:0.0010734563)98:0.0016289689,WP_085363448_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_zoodegmatis:0.0034801903)100:0.0061763213,((WP_085359773_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dumasiana:0.0015239627,WP_054599431_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria:0.0000010020)97:0.0022808213,WP_085356961_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dumasiana:0.0007711749)100:0.0036604876)100:0.0040260287,WP_126300855_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_animaloris:0.0216757572)100:0.0053846592,WP_259292195_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_CSL10203_ORH2:0.0322298890)98:0.0059564535,(WP_257067527_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dentiae:0.0007420563,WP_085366667_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dentiae:0.0015266403)100:0.0152569228)100:0.0107606445,((((WP_009117517_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_wadsworthii:0.0021906135,WP_107688710_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_wadsworthii:0.0031560160)100:0.0035148682,WP_054617477_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_83E34:0.0058143112)100:0.0084094831,WP_085416404_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_canis:0.0135403267)100:0.0318083002,((WP_182122044_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_shayeganii:0.0000023429,WP_009119203_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_shayeganii:0.0007576805)100:0.0637737002,(((((WP_277074835_DNA_directed_RNA_polymerase_subunit_beta_Simonsiella_muelleri:0.0082666707,WP_002642347_DNA_directed_RNA_polymerase_subunit_beta_Simonsiella_muelleri:0.0059837476)100:0.0458628631,((WP_249444214_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0000020977,(WP_249450670_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0019628958,((WP_249446984_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0007369236,WP_249442738_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0000021749)75:0.0009704404,WP_249448742_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0027265460)75:0.0052407520)75:0.0025272461)100:0.0473825491,WP_034294592_DNA_directed_RNA_polymerase_subunit_beta_Alysiella_crassa:0.0144377735)87:0.0053135340)87:0.0292093584,WP_097115193_DNA_directed_RNA_polymerase_subunit_beta_Alysiella_filiformis:0.0379009022)99:0.0289579992,(Unknown_Kingella_kingae:0.0777414056,MBQ9601984_DNA_directed_RNA_polymerase_subunit_beta_Neisseriaceae_bacterium:0.1589431935)98:0.0212628852)100:0.0370712308,((WP_027022395_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_steedae:0.0000026263,WP_124794470_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_steedae:0.0044683001)100:0.0297728098,WP_027009793_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_kuhniae:0.0537005632)100:0.0497269480)100:0.0662320605)100:0.0315438069)94:0.0224139176)91:0.0119792495,WP_047761757_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_arctica:0.0465328321)100:0.0241058180)96:0.0046618054,WP_089035915_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_chenwenguii:0.0210206914)100:0.0098653937)100:0.0163915126)53:0.0032715695)98:0.0070146300)94:0.0010190721)84:0.0024839761)58:0.0017011579)65:0.0020714588)88:0.0031214443)28:0.0000023462,WP_050174080_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007518281)26:0.0000023225,WP_050183641_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007518885)9:0.0000010019,WP_050305409_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007521496)6:0.0000023639,WP_105182946_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007517689)4:0.0000010019,WP_002236600_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)6:0.0000010019,WP_050182560_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007522360)12:0.0000010019,WP_055406423_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007523838)3:0.0000020000,WP_050176886_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007519151)12:0.0000010019,WP_127275093_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007517230)2:0.0000024515,WP_050389066_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007519724)7:0.0000010019,WP_050169189_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007529559)11:0.0000022215,WP_002249215_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007517586)36:0.0000021241,((((((((WP_061696655_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015066893,WP_096100990_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000028614)75:0.0007668644,WP_118827897_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007484764)8:0.0000023547,WP_002255629_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000021223)15:0.0000020850,WP_101106728_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007483752)44:0.0007494801,WP_124203625_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007505516)20:0.0000023175,WP_101126412_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007506585)25:0.0000021686,WP_061705101_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)25:0.0000022128,WP_124201832_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007499638)70:0.0007526886)38:0.0000027523,(((((WP_101129885_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007523075,(((((((((((((((((((((((WP_115155460_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007518696,WP_148080949_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007519365)19:0.0000024852,WP_002228870_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)36:0.0000023475,WP_101120335_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007517853)81:0.0007593797,WP_196979384_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015162388)49:0.0007518175,WP_196978806_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0022644396)27:0.0000024675,WP_080541899_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023445)69:0.0007688913,(((((((((((WP_061385077_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015086763,WP_219221988_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0061256992)73:0.0007869985,WP_127254448_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007532679)6:0.0000024785,WP_127224883_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)72:0.0000025010,(WP_061826000_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000024246,((((((WP_061728965_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007554353,WP_002223293_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000024520)82:0.0007551344,WP_061726693_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007544557)7:0.0000023322,WP_021437891_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007545884)4:0.0000022133,WP_014575103_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)4:0.0000024617,(WP_127207396_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007544295,WP_118832484_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007544608)14:0.0000020096)14:0.0000023608,WP_002247736_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0022720629)16:0.0007554642)72:0.0015052810)8:0.0007512755,WP_101065769_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000022063)7:0.0007504001,(((WP_039638097_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007476038,(AAF40591_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_meningitidis_MC58:0.0000010020,WP_002224771_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)78:0.0000026428)100:0.0008456118,WP_021437267_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000020571)62:0.0000023252,WP_127232724_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007475984)85:0.0008494950)5:0.0000025905,(WP_002240961_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007554421,WP_127202838_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007551456)99:0.0022761593)2:0.0000025027,WP_002239439_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023118)3:0.0000023522,(((((WP_014573707_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000021882,(((WP_002218563_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015199767,((WP_025460067_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020,WP_101182604_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007559834)78:0.0000024920,WP_242555465_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007556234)91:0.0007560841)23:0.0000024786,WP_002218421_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)28:0.0000023959,WP_101133237_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0022803493)41:0.0007552301)38:0.0000024725,(WP_050888330_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000025493,WP_127242969_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015250102)83:0.0007558379)24:0.0007545208,WP_118854860_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007537118)10:0.0000022154,WP_019742820_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023010)10:0.0000024404,((WP_219208972_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007574121,WP_002234460_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000024847)61:0.0000024224,WP_101123983_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007564586)80:0.0007548379)13:0.0007548395)7:0.0000022064,(WP_101134577_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007500864,MCL5819672_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000021588)85:0.0007495014)23:0.0008487347,WP_025459350_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007514401)20:0.0000023118)13:0.0000025320,WP_219199987_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007506965)2:0.0000022567,WP_050893208_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007510449)4:0.0000025288,MCL4977048_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007504346)5:0.0000026052,(MBH2056702_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000022369,MBH2162182_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007502980)100:0.0007504844)1:0.0000025510,WP_017629226_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000028487)8:0.0000023740,((WP_219198875_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000020681,(WP_127207129_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0014975037,(WP_021439640_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0022764225,WP_241499808_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_gonorrhoeae:0.0022738334)76:0.0014941160)66:0.0000021087)74:0.0007490358,((WP_101065128_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020,(WP_096122624_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007484559,MBG8643002_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007485705)16:0.0000023972)24:0.0000022013,MBJ7849834_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007512693)92:0.0007510869)64:0.0007529711)18:0.0000027961,((WP_127214795_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020,(WP_015815968_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007471011,((WP_002237534_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000022417,WP_061693478_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007517232)67:0.0007523288,(WP_002232264_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007494635,WP_025457606_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria:0.0037992358)65:0.0007481612)35:0.0000024614)16:0.0000024394)37:0.0000021842,(WP_196958784_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000022857,(((((WP_002243190_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria:0.0000010020,(WP_101105695_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007489266,WP_101106277_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007492429)29:0.0000024961)46:0.0000024679,WP_101171534_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007492862)87:0.0007492378,WP_118911383_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000024756)79:0.0000021927,(WP_118830659_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015124177,WP_101131295_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007472453)97:0.0022542742)70:0.0007521896,((WP_147280603_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000020513,WP_050890942_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015018704)89:0.0007502785,WP_002221840_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000024827)82:0.0007475998)55:0.0007526173)46:0.0007480069)46:0.0007504123)29:0.0008500951,WP_118948605_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007521788)17:0.0000026401,WP_096112301_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)18:0.0000024594,(WP_002233412_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000024725,WP_127220655_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007526312)50:0.0007516741)30:0.0008514227,WP_002250955_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000029469)25:0.0000027814,(WP_127401569_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007509657,WP_219302659_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000020867)94:0.0007516520)26:0.0008507144,(WP_118836779_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015057337,WP_127308507_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000024197)75:0.0007522765)19:0.0000024452,(WP_127253299_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000020403,WP_127266391_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007513548)100:0.0007513793)10:0.0000021127,WP_101126723_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)11:0.0000023451,MCL5729262_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007512061)23:0.0000022780)48:0.0008497657,((WP_219195755_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015194669,(WP_101129295_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015214691,(WP_002235366_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000020315,WP_239759853_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007542691)100:0.0007514606)80:0.0007586053)69:0.0000024392,WP_127281858_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000025089)76:0.0015078047)36:0.0000026198,WP_101115884_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)24:0.0000024721,MCL6081067_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015038432)43:0.0000024626,(((((((((WP_024464932_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007514862,WP_127233377_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007518399)13:0.0000010019,WP_002220155_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)14:0.0000010019,(WP_061727831_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007512547,(WP_002238605_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000025317,WP_024497027_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007517641)100:0.0007519052)24:0.0000023443)20:0.0000022520,WP_002254272_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007513602)96:0.0007510774,MBH5688057_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007534060)38:0.0000024969,WP_199204028_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007506848)9:0.0000020145,WP_002225943_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000010020)3:0.0000021460,(WP_101116843_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007507871,WP_118825531_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007509447)8:0.0000022501)72:0.0000026704,CAM09442_DNA_directed_RNA_polymerase_beta_chain_Neisseria_meningitidis_FAM18:0.0000023763)96:0.0014920371)40:0.0007450372);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -14696.159020
+Robinson-Foulds distance between ML tree and consensus tree: 116
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AHW74480_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|
+|                                         +--WP_050178255_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      +--| (28)
+|                                      |  |  +--WP_127238859_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |  +--| (88)
+|                                      |     |                 +--WP_013448207_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |              +--| (50)
+|                                      |     |              |  +--WP_036475237_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |           +--| (76)
+|                                      |     |           |  |           +--WP_115178225_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |           |  |        +--| (14)
+|                                      |     |           |  |        |  +--WP_118783883_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |           |  |     +--| (19)
+|                                      |     |           |  |     |  |  +--WP_118810593_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |           |  |     |  +--| (20)
+|                                      |     |           |  |     |     +--WP_118778594_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |           |  |  +--| (37)
+|                                      |     |           |  |  |  +--WP_003713294_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |           |  +--| (79)
+|                                      |     |           |     |  +--WP_118847179_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |           |     +--| (91)
+|                                      |     |           |        +--WP_096108461_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        +--| (99)
+|                                      |     |        |  |  +--WP_118783140_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |        |  +--| (63)
+|                                      |     |        |     +--WP_118788062_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |     +--| (89)
+|                                      |     |     |  +--WP_107863913_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_polysaccharea
+|                                      |     |  +--| (66)
+|                                      |     |  |  |  +--WP_118816456_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     |  |  +--| (97)
+|                                      |     |  |     +--WP_118780593_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica
+|                                      |     +--| (65)
+|                                      |        |  +--WP_118821336_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |        +--| (58)
+|                                      |           |  +--WP_127219978_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |           +--| (84)
+|                                      |              |  +--MCL4978381_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |              +--| (94)
+|                                      |                 |                                         +--WP_036491331_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                 |                                      +--| (82)
+|                                      |                 |                                      |  |  +--MBY6286503_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                                      |  +--| (66)
+|                                      |                 |                                      |     |  +--OHR16733_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC078C12
+|                                      |                 |                                      |     +--| (100)
+|                                      |                 |                                      |        |  +--MCL9791895_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                                      |        +--| (70)
+|                                      |                 |                                      |           +--MBF1271133_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                 |                                   +--| (91)
+|                                      |                 |                                   |  +--VTY02445_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                                +--| (86)
+|                                      |                 |                                |  +--EFV79787_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa_C102
+|                                      |                 |                             +--| (96)
+|                                      |                 |                             |  +--WP_036494041_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                 |                          +--| (100)
+|                                      |                 |                          |  +--MBD0771641_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_RH3002v2g
+|                                      |                 |                       +--| (47)
+|                                      |                 |                       |  +--KZC76029_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens
+|                                      |                 |                    +--| (32)
+|                                      |                 |                    |  +--EER55601_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens_SK114
+|                                      |                 |                 +--| (47)
+|                                      |                 |                 |  |  +--OFM32478_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC068C04
+|                                      |                 |                 |  +--| (55)
+|                                      |                 |                 |     |  +--MCL9779564_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                 |     +--| (49)
+|                                      |                 |                 |        |  +--MCL9764968_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |                 |        +--| (90)
+|                                      |                 |                 |           +--MBD0769656_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_KH1003_01
+|                                      |                 |              +--| (36)
+|                                      |                 |              |  |           +--WP_004521091_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria
+|                                      |                 |              |  |        +--| (96)
+|                                      |                 |              |  |        |  +--WP_249551838_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_perflava
+|                                      |                 |              |  |     +--| (56)
+|                                      |                 |              |  |     |  +--UTG69673_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |              |  |  +--| (60)
+|                                      |                 |              |  |  |  +--KZC82653_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens
+|                                      |                 |              |  +--| (60)
+|                                      |                 |              |     +--KZC86539_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens
+|                                      |                 |           +--| (38)
+|                                      |                 |           |  |           +--WP_039854740_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_cinerea
+|                                      |                 |           |  |        +--| (99)
+|                                      |                 |           |  |        |  +--EEZ70999_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_cinerea_ATCC_14685
+|                                      |                 |           |  |     +--| (99)
+|                                      |                 |           |  |     |  +--UTG74580_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |           |  |  +--| (35)
+|                                      |                 |           |  |  |  +--WP_039863992_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_flavescens
+|                                      |                 |           |  +--| (41)
+|                                      |                 |           |     +--WP_107960880_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_cinerea
+|                                      |                 |        +--| (25)
+|                                      |                 |        |  |              +--OFK84964_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC061E12
+|                                      |                 |        |  |           +--| (82)
+|                                      |                 |        |  |           |  +--VTX71728_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava
+|                                      |                 |        |  |        +--| (52)
+|                                      |                 |        |  |        |  +--OFO66788_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC065C04
+|                                      |                 |        |  |     +--| (95)
+|                                      |                 |        |  |     |  +--MBS5742110_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                 |        |  |  +--| (73)
+|                                      |                 |        |  |  |  +--MBF1296049_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                      |                 |        |  +--| (56)
+|                                      |                 |        |     +--WP_070624754_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC063B05
+|                                      |                 |     +--| (35)
+|                                      |                 |     |  +--MBF1301413_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                 |  +--| (93)
+|                                      |                 |  |  |     +--OHP61642_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC061H08
+|                                      |                 |  |  |  +--| (56)
+|                                      |                 |  |  |  |  +--MBF1278349_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                 |  |  +--| (28)
+|                                      |                 |  |     +--OFR81995_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC073G10
+|                                      |                 +--| (98)
+|                                      |                    |                 +--WP_049227159_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |              +--| (10)
+|                                      |                    |              |  +--WP_107814201_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |           +--| (32)
+|                                      |                    |           |  |  +--EGY59291_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_GT4A_CT1
+|                                      |                    |           |  +--| (8)
+|                                      |                    |           |     |  +--OFN87227_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC064E01
+|                                      |                    |           |     +--| (21)
+|                                      |                    |           |        +--WP_204828228_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |        +--| (50)
+|                                      |                    |        |  |        +--WP_060975723_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                    |        |  |     +--| (67)
+|                                      |                    |        |  |     |  +--WP_003760502_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |        |  |  +--| (53)
+|                                      |                    |        |  |  |  +--OHR76755_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC70E02
+|                                      |                    |        |  +--| (53)
+|                                      |                    |        |     +--OFO37493_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC065D04
+|                                      |                    |     +--| (35)
+|                                      |                    |     |  +--WP_003742650_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseriaceae
+|                                      |                    |  +--| (100)
+|                                      |                    |  |  |                                      +--WP_039409753_DNA_directed_RNA_polymerase_subunit_beta_Morococcus_cerebrosus
+|                                      |                    |  |  |                                   +--| (52)
+|                                      |                    |  |  |                                   |  |  +--KJJ20238_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_sp_HMSC06F02
+|                                      |                    |  |  |                                   |  +--| (54)
+|                                      |                    |  |  |                                   |     +--AVR79988_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                    |  |  |                                +--| (71)
+|                                      |                    |  |  |                                |  +--WP_003779773_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_macacae
+|                                      |                    |  |  |                             +--| (36)
+|                                      |                    |  |  |                             |  |  +--WP_070441377_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |                             |  +--| (27)
+|                                      |                    |  |  |                             |     +--WP_070857314_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                    |  |  |                          +--| (46)
+|                                      |                    |  |  |                          |  +--WP_070538906_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |                       +--| (51)
+|                                      |                    |  |  |                       |  +--OHR42300_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC071B12
+|                                      |                    |  |  |                    +--| (15)
+|                                      |                    |  |  |                    |  +--WP_016686980_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |                 +--| (15)
+|                                      |                    |  |  |                 |  +--WP_009175236_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_oral_taxon_014
+|                                      |                    |  |  |              +--| (21)
+|                                      |                    |  |  |              |  +--OFN27192_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC077D05
+|                                      |                    |  |  |           +--| (70)
+|                                      |                    |  |  |           |  +--WP_070491699_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa
+|                                      |                    |  |  |        +--| (48)
+|                                      |                    |  |  |        |  +--OFN00094_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC055F11
+|                                      |                    |  |  |     +--| (60)
+|                                      |                    |  |  |     |  +--MBS6045508_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp
+|                                      |                    |  |  |  +--| (58)
+|                                      |                    |  |  |  |  |     +--WP_070654428_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |  |  |  +--| (99)
+|                                      |                    |  |  |  |  |  |  +--WP_146736155_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  |  |  +--| (43)
+|                                      |                    |  |  |  |     +--WP_019270606_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    |  |  +--| (50)
+|                                      |                    |  |     +--WP_107824887_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca
+|                                      |                    +--| (53)
+|                                      |                       |     +--WP_165090205_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_ZJ930
+|                                      |                       |  +--| (100)
+|                                      |                       |  |  +--WP_165011005_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_ZJ785
+|                                      |                       +--| (100)
+|                                      |                          |        +--WP_066077701_DNA_directed_RNA_polymerase_subunit_beta_Bergeriella_denitrificans
+|                                      |                          |     +--| (99)
+|                                      |                          |     |  +--WP_253354158_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_perflava
+|                                      |                          |  +--| (96)
+|                                      |                          |  |  |                       +--WP_115134940_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_zoodegmatis
+|                                      |                          |  |  |                    +--| (98)
+|                                      |                          |  |  |                    |  +--WP_244740835_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_Dent_CA1
+|                                      |                          |  |  |                 +--| (100)
+|                                      |                          |  |  |                 |  +--WP_085363448_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_zoodegmatis
+|                                      |                          |  |  |              +--| (100)
+|                                      |                          |  |  |              |  |     +--WP_085359773_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dumasiana
+|                                      |                          |  |  |              |  |  +--| (97)
+|                                      |                          |  |  |              |  |  |  +--WP_054599431_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria
+|                                      |                          |  |  |              |  +--| (100)
+|                                      |                          |  |  |              |     +--WP_085356961_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dumasiana
+|                                      |                          |  |  |           +--| (100)
+|                                      |                          |  |  |           |  +--WP_126300855_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_animaloris
+|                                      |                          |  |  |        +--| (98)
+|                                      |                          |  |  |        |  +---WP_259292195_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_CSL10203_ORH2
+|                                      |                          |  |  |     +--| (100)
+|                                      |                          |  |  |     |  |  +--WP_257067527_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dentiae
+|                                      |                          |  |  |     |  +--| (100)
+|                                      |                          |  |  |     |     +--WP_085366667_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dentiae
+|                                      |                          |  |  |  +--| (91)
+|                                      |                          |  |  |  |  |            +--WP_009117517_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_wadsworthii
+|                                      |                          |  |  |  |  |         +--| (100)
+|                                      |                          |  |  |  |  |         |  +--WP_107688710_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_wadsworthii
+|                                      |                          |  |  |  |  |      +--| (100)
+|                                      |                          |  |  |  |  |      |  +--WP_054617477_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_83E34
+|                                      |                          |  |  |  |  |  +---| (100)
+|                                      |                          |  |  |  |  |  |   +--WP_085416404_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_canis
+|                                      |                          |  |  |  |  +--| (94)
+|                                      |                          |  |  |  |     |           +--WP_182122044_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_shayeganii
+|                                      |                          |  |  |  |     |   +-------| (100)
+|                                      |                          |  |  |  |     |   |       +--WP_009119203_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_shayeganii
+|                                      |                          |  |  |  |     +---| (100)
+|                                      |                          |  |  |  |         |                           +--WP_277074835_DNA_directed_RNA_polymerase_subunit_beta_Simonsiella_muelleri
+|                                      |                          |  |  |  |         |                     +-----| (100)
+|                                      |                          |  |  |  |         |                     |     +--WP_002642347_DNA_directed_RNA_polymerase_subunit_beta_Simonsiella_muelleri
+|                                      |                          |  |  |  |         |                 +---| (87)
+|                                      |                          |  |  |  |         |                 |   |        +--WP_249444214_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   |  +-----| (100)
+|                                      |                          |  |  |  |         |                 |   |  |     |  +--WP_249450670_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   |  |     +--| (75)
+|                                      |                          |  |  |  |         |                 |   |  |        |     +--WP_249446984_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   |  |        |  +--| (75)
+|                                      |                          |  |  |  |         |                 |   |  |        |  |  +--WP_249442738_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   |  |        +--| (75)
+|                                      |                          |  |  |  |         |                 |   |  |           +--WP_249448742_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis
+|                                      |                          |  |  |  |         |                 |   +--| (87)
+|                                      |                          |  |  |  |         |                 |      +--WP_034294592_DNA_directed_RNA_polymerase_subunit_beta_Alysiella_crassa
+|                                      |                          |  |  |  |         |             +---| (99)
+|                                      |                          |  |  |  |         |             |   +----WP_097115193_DNA_directed_RNA_polymerase_subunit_beta_Alysiella_filiformis
+|                                      |                          |  |  |  |         |        +----| (100)
+|                                      |                          |  |  |  |         |        |    |  +---------Unknown_Kingella_kingae
+|                                      |                          |  |  |  |         |        |    +--| (98)
+|                                      |                          |  |  |  |         |        |       +---------------------MBQ9601984_DNA_directed_RNA_polymerase_subunit_beta_Neisseriaceae_bacterium
+|                                      |                          |  |  |  |         +--------| (100)
+|                                      |                          |  |  |  |                  |          +--WP_027022395_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_steedae
+|                                      |                          |  |  |  |                  |      +---| (100)
+|                                      |                          |  |  |  |                  |      |   +--WP_124794470_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_steedae
+|                                      |                          |  |  |  |                  +------| (100)
+|                                      |                          |  |  |  |                         +------WP_027009793_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_kuhniae
+|                                      |                          |  |  +--| (100)
+|                                      |                          |  |     +-----WP_047761757_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_arctica
+|                                      |                          +--| (100)
+|                                      |                             +--WP_089035915_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_chenwenguii
+|                                   +--| (26)
+|                                   |  +--WP_050174080_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                                +--| (9)
+|                                |  +--WP_050183641_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                             +--| (6)
+|                             |  +--WP_050305409_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                          +--| (4)
+|                          |  +--WP_105182946_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                       +--| (6)
+|                       |  +--WP_002236600_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                    +--| (12)
+|                    |  +--WP_050182560_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|                 +--| (8)
+|                 |  +--WP_050176886_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|              +--| (12)
+|              |  +--WP_055406423_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           +--| (10)
+|           |  +--WP_050169189_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        +--| (8)
+|        |  +--WP_002249215_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|     +--| (16)
+|     |  +--WP_050389066_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  +--| (36)
+|  |  +--WP_127275093_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
++--| (38)
+|  |        +--WP_061696655_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |     +--| (75)
+|  |     |  +--WP_096100990_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |  +--| (44)
+|  |  |  |     +--WP_002255629_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |  |  |  +--| (28)
+|  |  |  |  |  +--WP_118827897_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  |  |  +--| (34)
+|  |  |     +--WP_101106728_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  +--| (70)
+|     |     +--WP_124201832_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|     |  +--| (20)
+|     |  |  |  +--WP_124203625_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|     |  |  +--| (15)
+|     |  |     +--WP_061705101_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|     +--| (51)
+|        +--WP_101126412_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|
+|              +--WP_101129885_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           +--| (48)
+|           |  |                                               +--WP_115155460_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                            +--| (27)
+|           |  |                                            |  +--WP_002228870_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                         +--| (36)
+|           |  |                                         |  +--WP_148080949_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                      +--| (81)
+|           |  |                                      |  +--WP_101120335_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                   +--| (49)
+|           |  |                                   |  +--WP_196979384_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                +--| (69)
+|           |  |                                |  |  +--WP_080541899_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                                |  +--| (38)
+|           |  |                                |     +--WP_196978806_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             +--| (18)
+|           |  |                             |  |                                      +--WP_061385077_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                                   +--| (73)
+|           |  |                             |  |                                   |  +--WP_219221988_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                                +--| (48)
+|           |  |                             |  |                                |  +--WP_127224883_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                             +--| (72)
+|           |  |                             |  |                             |  +--WP_127254448_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                          +--| (22)
+|           |  |                             |  |                          |  +--WP_101065769_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       +--| (26)
+|           |  |                             |  |                       |  |        +--WP_019742820_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |     +--| (31)
+|           |  |                             |  |                       |  |     |  +--WP_118854860_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  +--| (42)
+|           |  |                             |  |                       |  |  |  |        +--WP_219208972_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |  |     +--| (61)
+|           |  |                             |  |                       |  |  |  |     |  +--WP_002234460_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |  |  +--| (80)
+|           |  |                             |  |                       |  |  |  |  |  +--WP_101123983_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |  +--| (41)
+|           |  |                             |  |                       |  |  |     |     +--WP_061826000_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |     |  +--| (26)
+|           |  |                             |  |                       |  |  |     |  |  |           +--WP_061728965_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |     |  |  |        +--| (82)
+|           |  |                             |  |                       |  |  |     |  |  |        |  +--WP_002223293_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |     |  |  |     +--| (4)
+|           |  |                             |  |                       |  |  |     |  |  |     |  |  +--WP_061726693_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |     |  |  |     |  +--| (15)
+|           |  |                             |  |                       |  |  |     |  |  |     |     +--WP_021437891_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |     |  |  |  +--| (5)
+|           |  |                             |  |                       |  |  |     |  |  |  |  |  +--WP_127207396_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |     |  |  |  |  +--| (14)
+|           |  |                             |  |                       |  |  |     |  |  |  |     +--WP_118832484_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |     |  |  +--| (14)
+|           |  |                             |  |                       |  |  |     |  |     +--WP_014575103_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  |  |     +--| (72)
+|           |  |                             |  |                       |  |  |        +--WP_002247736_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |  +--| (24)
+|           |  |                             |  |                       |     |                 +--WP_039638097_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |     |              +--| (100)
+|           |  |                             |  |                       |     |              |  |  +--AAF40591_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_meningitidis_MC58
+|           |  |                             |  |                       |     |              |  +--| (78)
+|           |  |                             |  |                       |     |              |     +--WP_002224771_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |     |           +--| (62)
+|           |  |                             |  |                       |     |           |  +--WP_021437267_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |     |        +--| (85)
+|           |  |                             |  |                       |     |        |  +--WP_127232724_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |     |     +--| (22)
+|           |  |                             |  |                       |     |     |  |  +--WP_002240961_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |     |     |  +--| (99)
+|           |  |                             |  |                       |     |     |     +--WP_127202838_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |     |  +--| (13)
+|           |  |                             |  |                       |     |  |  +--WP_002239439_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |     +--| (18)
+|           |  |                             |  |                       |        |  +--WP_101134577_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                       |        +--| (85)
+|           |  |                             |  |                       |           +--MCL5819672_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                    +--| (35)
+|           |  |                             |  |                    |  |     +--WP_050888330_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                    |  |  +--| (83)
+|           |  |                             |  |                    |  |  |  +--WP_127242969_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                    |  +--| (22)
+|           |  |                             |  |                    |     +--WP_025459350_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                 +--| (18)
+|           |  |                             |  |                 |  |     +--WP_219198875_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                 |  |  +--| (74)
+|           |  |                             |  |                 |  |  |  |  +--WP_127207129_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                 |  |  |  +--| (66)
+|           |  |                             |  |                 |  |  |     |  +--WP_021439640_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                 |  |  |     +--| (76)
+|           |  |                             |  |                 |  |  |        +--WP_241499808_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_gonorrhoeae
+|           |  |                             |  |                 |  +--| (64)
+|           |  |                             |  |                 |     |     +--WP_101065128_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                 |     |  +--| (39)
+|           |  |                             |  |                 |     |  |  |  +--MBJ7849834_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                 |     |  |  +--| (24)
+|           |  |                             |  |                 |     |  |     +--MBG8643002_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |                 |     +--| (92)
+|           |  |                             |  |                 |        +--WP_096122624_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |              +--| (10)
+|           |  |                             |  |              |  +--MCL4977048_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |           +--| (8)
+|           |  |                             |  |           |  +--WP_219199987_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |        +--| (8)
+|           |  |                             |  |        |  +--WP_017629226_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |     +--| (9)
+|           |  |                             |  |     |  |  +--MBH2056702_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |     |  +--| (100)
+|           |  |                             |  |     |     +--MBH2162182_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  |  +--| (29)
+|           |  |                             |  |  |  +--WP_050893208_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |  +--| (8)
+|           |  |                             |     |  +--WP_014573707_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |     +--| (38)
+|           |  |                             |        |        +--WP_002218563_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |        |     +--| (23)
+|           |  |                             |        |     |  |     +--WP_025460067_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |        |     |  |  +--| (78)
+|           |  |                             |        |     |  |  |  +--WP_101182604_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |        |     |  +--| (91)
+|           |  |                             |        |     |     +--WP_242555465_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |        |  +--| (28)
+|           |  |                             |        |  |  +--WP_002218421_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                             |        +--| (41)
+|           |  |                             |           +--WP_101133237_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          +--| (29)
+|           |  |                          |  |        +--WP_127214795_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |     +--| (38)
+|           |  |                          |  |     |  +--WP_015815968_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  +--| (37)
+|           |  |                          |  |  |  |     +--WP_002237534_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  |  |  +--| (67)
+|           |  |                          |  |  |  |  |  +--WP_061693478_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  |  +--| (35)
+|           |  |                          |  |  |     |  +--WP_002232264_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |  |  |     +--| (65)
+|           |  |                          |  |  |        +--WP_025457606_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria
+|           |  |                          |  +--| (46)
+|           |  |                          |     |  +--WP_196958784_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |     +--| (46)
+|           |  |                          |        |              +--WP_002243190_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria
+|           |  |                          |        |           +--| (46)
+|           |  |                          |        |           |  |  +--WP_101105695_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |           |  +--| (29)
+|           |  |                          |        |           |     +--WP_101106277_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |        +--| (87)
+|           |  |                          |        |        |  +--WP_101171534_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |     +--| (79)
+|           |  |                          |        |     |  +--WP_118911383_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |  +--| (70)
+|           |  |                          |        |  |  |  +--WP_118830659_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        |  |  +--| (97)
+|           |  |                          |        |  |     +--WP_101131295_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |        +--| (55)
+|           |  |                          |           |     +--WP_147280603_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |           |  +--| (89)
+|           |  |                          |           |  |  +--WP_050890942_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                          |           +--| (82)
+|           |  |                          |              +--WP_002221840_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                       +--| (17)
+|           |  |                       |  +--WP_118948605_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                    +--| (18)
+|           |  |                    |  +--WP_096112301_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                 +--| (30)
+|           |  |                 |  |  +--WP_002233412_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |                 |  +--| (50)
+|           |  |                 |     +--WP_127220655_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |              +--| (25)
+|           |  |              |  +--WP_002250955_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |           +--| (26)
+|           |  |           |  |  +--WP_127401569_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |           |  +--| (94)
+|           |  |           |     +--WP_219302659_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |        +--| (19)
+|           |  |        |  |  +--WP_118836779_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |        |  +--| (75)
+|           |  |        |     +--WP_127308507_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |     +--| (10)
+|           |  |     |  |  +--WP_127253299_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |     |  +--| (100)
+|           |  |     |     +--WP_127266391_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  |  +--| (11)
+|           |  |  |  +--WP_101126723_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|           |  +--| (23)
+|           |     +--MCL5729262_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        +--| (36)
+|        |  |     +--WP_219195755_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        |  |  +--| (69)
+|        |  |  |  |  +--WP_101129295_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        |  |  |  +--| (80)
+|        |  |  |     |  +--WP_002235366_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        |  |  |     +--| (100)
+|        |  |  |        +--WP_239759853_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|        |  +--| (76)
+|        |     +--WP_127281858_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|     +--| (24)
+|     |  +--WP_101115884_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+|  +--| (43)
+|  |  +--MCL6081067_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
++--| (40)
+   |                          +--WP_024464932_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                       +--| (13)
+   |                       |  +--WP_127233377_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                    +--| (14)
+   |                    |  +--WP_002220155_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                 +--| (34)
+   |                 |  |  +--WP_002254272_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                 |  +--| (18)
+   |                 |     |  +--WP_002238605_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |                 |     +--| (100)
+   |                 |        +--WP_024497027_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |              +--| (96)
+   |              |  +--WP_061727831_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |           +--| (38)
+   |           |  +--MBH5688057_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |        +--| (12)
+   |        |  +--WP_118825531_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |     +--| (23)
+   |     |  |  +--WP_101116843_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |     |  +--| (23)
+   |     |     +--WP_199204028_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   |  +--| (72)
+   |  |  +--WP_002225943_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis
+   +--| (96)
+      +--CAM09442_DNA_directed_RNA_polymerase_beta_chain_Neisseria_meningitidis_FAM18
+
+
+Consensus tree in newick format: 
+
+(AHW74480_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,((((((((((((((WP_050178255_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007529390,(WP_127238859_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,((((((WP_013448207_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0000023611,WP_036475237_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0015391739)50:0.0007692310,((((WP_115178225_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0000023611,WP_118783883_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007682041)14:0.0000023611,(WP_118810593_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007679145,WP_118778594_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0015438926)20:0.0000023611)19:0.0000023611,WP_003713294_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0030792026)37:0.0007674082,(WP_118847179_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007665860,WP_096108461_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007663489)91:0.0000023611)79:0.0007685674)76:0.0000023611,(WP_118783140_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0000023611,WP_118788062_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007681258)63:0.0000023611)99:0.0015493208,WP_107863913_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_polysaccharea:0.0015156547)89:0.0007736386,(WP_118816456_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0000023611,WP_118780593_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_lactamica:0.0007592874)97:0.0007628758)66:0.0002609425,(WP_118821336_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0018685165,(WP_127219978_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0026066622,(MCL4978381_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0064200617,((((((((((((((WP_036491331_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0000023611,(MBY6286503_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0014997454,(OHR16733_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC078C12:0.0000023611,(MCL9791895_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0014994621,MBF1271133_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0007516617)70:0.0000023611)100:0.0007496458)66:0.0000023611)82:0.0000023611,VTY02445_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0000023611)91:0.0007245545,EFV79787_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa_C102:0.0000023611)86:0.0000023611,WP_036494041_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0000023611)96:0.0007974834,MBD0771641_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_RH3002v2g:0.0000023611)100:0.0073325076,KZC76029_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens:0.0000023611)47:0.0022038823,EER55601_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens_SK114:0.0021952315)32:0.0000023611,(OFM32478_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC068C04:0.0000023611,(MCL9779564_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0015020902,(MCL9764968_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0000023611,MBD0769656_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_KH1003_01:0.0030183010)90:0.0007520451)49:0.0000023611)55:0.0000023611)47:0.0007342117,((((WP_004521091_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria:0.0000023611,WP_249551838_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_perflava:0.0007514913)96:0.0007550387,UTG69673_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0015117850)56:0.0000023611,KZC82653_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens:0.0007348012)60:0.0007339469,KZC86539_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_flavescens:0.0000023611)60:0.0007338503)36:0.0000020233,((((WP_039854740_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_cinerea:0.0000023611,EEZ70999_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_cinerea_ATCC_14685:0.0000020233)99:0.0018825835,UTG74580_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0014990285)99:0.0018970482,WP_039863992_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_flavescens:0.0007548094)35:0.0000020233,WP_107960880_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_cinerea:0.0000023611)41:0.0000020233)38:0.0007761694,(((((OFK84964_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC061E12:0.0000023611,VTX71728_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_subflava:0.0054962765)82:0.0007500813,OFO66788_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC065C04:0.0000023611)52:0.0000023611,MBS5742110_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0015097213)95:0.0015029773,MBF1296049_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)73:0.0007520759,WP_070624754_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC063B05:0.0000023611)56:0.0007560783)25:0.0000023611,MBF1301413_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0000023611)35:0.0007815511,((OHP61642_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC061H08:0.0000023611,MBF1278349_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0015237980)56:0.0007612683,OFR81995_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC073G10:0.0000023611)28:0.0000023611)93:0.0054721232,((((((WP_049227159_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0000023611,WP_107814201_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007616177)10:0.0000023611,(EGY59291_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_GT4A_CT1:0.0007611881,(OFN87227_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC064E01:0.0007610485,WP_204828228_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0015206731)21:0.0000023611)8:0.0000023611)32:0.0000023611,(((WP_060975723_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0007576184,WP_003760502_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007641393)67:0.0007619407,OHR76755_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC70E02:0.0022946337)53:0.0000021492,OFO37493_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC065D04:0.0007626591)53:0.0007630205)50:0.0007660461,WP_003742650_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseriaceae:0.0007660341)35:0.0000023611,(((((((((((((WP_039409753_DNA_directed_RNA_polymerase_subunit_beta_Morococcus_cerebrosus:0.0000023611,(KJJ20238_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_sp_HMSC06F02:0.0007625977,AVR79988_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0022853911)54:0.0000023611)52:0.0000023611,WP_003779773_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_macacae:0.0007622493)71:0.0007617924,(WP_070441377_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0000023611,WP_070857314_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0007616109)27:0.0000023611)36:0.0000023611,WP_070538906_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0015334027)46:0.0005416701,OHR42300_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC071B12:0.0013908854)51:0.0003515565,WP_016686980_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007620866)15:0.0000023611,WP_009175236_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_oral_taxon_014:0.0007646323)15:0.0000023611,OFN27192_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC077D05:0.0000023611)21:0.0000023611,WP_070491699_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_mucosa:0.0007617851)70:0.0007662183,OFN00094_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_HMSC055F11:0.0007665351)48:0.0000023611,MBS6045508_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp:0.0007658983)60:0.0007671299,((WP_070654428_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0000023611,WP_146736155_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007639165)99:0.0007672112,WP_019270606_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0015340877)43:0.0000023611)58:0.0007692713,WP_107824887_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sicca:0.0007717848)50:0.0007666646)100:0.0084255041,((WP_165090205_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_ZJ930:0.0000023611,WP_165011005_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_ZJ785:0.0014957001)100:0.0216137571,(((WP_066077701_DNA_directed_RNA_polymerase_subunit_beta_Bergeriella_denitrificans:0.0239013633,WP_253354158_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_perflava:0.0240400860)99:0.0107860365,((((((((WP_115134940_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_zoodegmatis:0.0012328315,WP_244740835_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_Dent_CA1:0.0010748130)98:0.0016311415,WP_085363448_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_zoodegmatis:0.0034838677)100:0.0061851538,((WP_085359773_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dumasiana:0.0015258741,WP_054599431_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria:0.0000023611)97:0.0022833836,WP_085356961_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dumasiana:0.0007729678)100:0.0036649399)100:0.0040307986,WP_126300855_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_animaloris:0.0217064251)100:0.0053918909,WP_259292195_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_CSL10203_ORH2:0.0322756354)98:0.0059641480,(WP_257067527_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dentiae:0.0007438097,WP_085366667_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_dentiae:0.0015285788)100:0.0152763909)100:0.0107715396,((((WP_009117517_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_wadsworthii:0.0021934367,WP_107688710_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_wadsworthii:0.0031598741)100:0.0035203725,WP_054617477_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_sp_83E34:0.0058226618)100:0.0084215454,WP_085416404_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_canis:0.0135595916)100:0.0318560212,((WP_182122044_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_shayeganii:0.0000023611,WP_009119203_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_shayeganii:0.0007597008)100:0.0638706551,(((((WP_277074835_DNA_directed_RNA_polymerase_subunit_beta_Simonsiella_muelleri:0.0082818399,WP_002642347_DNA_directed_RNA_polymerase_subunit_beta_Simonsiella_muelleri:0.0059946813)100:0.0459599198,((WP_249444214_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0000020233,(WP_249450670_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0019668062,((WP_249446984_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0007380597,WP_249442738_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0000023611)75:0.0009717465,WP_249448742_DNA_directed_RNA_polymerase_subunit_beta_Wielerella_bovis:0.0027325530)75:0.0052513072)75:0.0025324093)100:0.0474769563,WP_034294592_DNA_directed_RNA_polymerase_subunit_beta_Alysiella_crassa:0.0144669946)87:0.0053172162)87:0.0292615682,WP_097115193_DNA_directed_RNA_polymerase_subunit_beta_Alysiella_filiformis:0.0379731041)99:0.0290064316,(Unknown_Kingella_kingae:0.0778938497,MBQ9601984_DNA_directed_RNA_polymerase_subunit_beta_Neisseriaceae_bacterium:0.1592626928)98:0.0212829232)100:0.0371258417,((WP_027022395_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_steedae:0.0000023631,WP_124794470_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_steedae:0.0044747408)100:0.0298213976,WP_027009793_DNA_directed_RNA_polymerase_subunit_beta_Conchiformibius_kuhniae:0.0537885739)100:0.0498204806)100:0.0663447401)100:0.0315874931)94:0.0224454098)91:0.0119934508,WP_047761757_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_arctica:0.0465966205)100:0.0241378743)96:0.0046657469,WP_089035915_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_chenwenguii:0.0210471584)100:0.0098768418)100:0.0164121272)53:0.0032753990)98:0.0070210023)94:0.0010201914)84:0.0024862810)58:0.0017028659)65:0.0020758431)88:0.0031251635)28:0.0000023611,WP_050174080_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007530990)26:0.0000023611,WP_050183641_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007531596)9:0.0000023611,WP_050305409_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007534213)6:0.0000023611,WP_105182946_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007530396)4:0.0000023611,WP_002236600_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)6:0.0000023611,WP_050182560_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007535080)12:0.0000023611,WP_050176886_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007531869)8:0.0000023611,WP_055406423_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007536555)12:0.0000023611,WP_050169189_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007542308)10:0.0000023611,WP_002249215_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007530305)8:0.0000023611,WP_050389066_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007532430)16:0.0000023611,WP_127275093_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007529918)36:0.0000023611,(((WP_061696655_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015084603,WP_096100990_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)75:0.0007681698,((WP_002255629_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_118827897_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007497432)28:0.0000023611,WP_101106728_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007496358)34:0.0000023611)44:0.0007507425,((WP_124201832_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007512268,(WP_124203625_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007518027,WP_061705101_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)15:0.0000023611)20:0.0000023611,WP_101126412_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007519238)51:0.0000023611)70:0.0007539755)38:0.0000023611,(((((WP_101129885_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007535719,((((((((((((((((WP_115155460_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007531310,WP_002228870_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)27:0.0000023611,WP_148080949_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007531997)36:0.0000023611,WP_101120335_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007530473)81:0.0007606549,WP_196979384_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015180277)49:0.0007530731,(WP_080541899_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_196978806_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0022672167)38:0.0000023611)69:0.0007701813,(((((((((((((WP_061385077_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015104206,WP_219221988_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0061328139)73:0.0007882930,WP_127224883_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)48:0.0000023611,WP_127254448_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007545353)72:0.0007525228,WP_101065769_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)22:0.0000023611,(((WP_019742820_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_118854860_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007549414)31:0.0000023611,(((WP_219208972_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007586476,WP_002234460_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)61:0.0000023611,WP_101123983_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007576903)80:0.0007560590,((WP_061826000_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007566993,((((WP_061728965_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007566769,WP_002223293_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)82:0.0007563822,(WP_061726693_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007556908,WP_021437891_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007558288)15:0.0000023611)4:0.0000023611,(WP_127207396_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007556706,WP_118832484_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007557008)14:0.0000023611)5:0.0000023611,WP_014575103_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)14:0.0000023611)26:0.0000023611,WP_002247736_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0022748366)72:0.0015133223)41:0.0000023611)42:0.0007560695,((((((WP_039638097_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007488365,(AAF40591_DNA_directed_RNA_polymerase_beta_subunit_Neisseria_meningitidis_MC58:0.0000023611,WP_002224771_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)78:0.0000023611)100:0.0008239837,WP_021437267_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)62:0.0000023611,WP_127232724_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007488310)85:0.0008272272,(WP_002240961_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007566902,WP_127202838_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007563893)99:0.0022789322)22:0.0000023611,WP_002239439_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)13:0.0000023611,(WP_101134577_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007513201,MCL5819672_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)85:0.0007507264)18:0.0000023611)24:0.0008273076)26:0.0008287200,((WP_050888330_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_127242969_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015267425)83:0.0007585816,WP_025459350_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)22:0.0000023338)35:0.0008285119,((WP_219198875_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,(WP_127207129_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0014991728,(WP_021439640_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0022792850,WP_241499808_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_gonorrhoeae:0.0022765102)76:0.0014958722)66:0.0000023611)74:0.0007502725,((WP_101065128_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,(MBJ7849834_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007525106,MBG8643002_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007498075)24:0.0000023611)39:0.0000023611,WP_096122624_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007496944)92:0.0007523270)64:0.0007542233)18:0.0000023611,MCL4977048_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007516795)10:0.0000023611,WP_219199987_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007519438)8:0.0000023611,WP_017629226_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)8:0.0000023611,(MBH2056702_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,MBH2162182_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007515434)100:0.0007517299)9:0.0000023611,WP_050893208_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007522943)29:0.0000023611,(WP_014573707_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,(((WP_002218563_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015217514,((WP_025460067_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_101182604_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007572558)78:0.0000023611,WP_242555465_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007568955)91:0.0007573564)23:0.0000023611,WP_002218421_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)28:0.0000023611,WP_101133237_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0022831530)41:0.0007564975)38:0.0007571217)8:0.0000023611)18:0.0000023631,(((WP_127214795_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_015815968_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007483565)38:0.0000023611,((WP_002237534_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_061693478_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007529871)67:0.0007535939,(WP_002232264_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007507209,WP_025457606_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria:0.0038036818)65:0.0007494149)35:0.0000023611)37:0.0000023611,(WP_196958784_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,(((((WP_002243190_MULTISPECIES_DNA_directed_RNA_polymerase_subunit_beta_Neisseria:0.0000023611,(WP_101105695_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007501833,WP_101106277_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007505002)29:0.0000023611)46:0.0000023611,WP_101171534_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007505436)87:0.0007504955,WP_118911383_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)79:0.0000023611,(WP_118830659_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015141927,WP_101131295_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007485007)97:0.0022569732)70:0.0007534510,((WP_147280603_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_050890942_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015036499)89:0.0007515384,WP_002221840_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)82:0.0007488143)55:0.0007539228)46:0.0007492619)46:0.0007516716)29:0.0008278209,WP_118948605_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007534430)17:0.0000023611,WP_096112301_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)18:0.0008294608,(WP_002233412_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007538844,WP_127220655_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)50:0.0007537826)30:0.0000020105,WP_002250955_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)25:0.0000023611,(WP_127401569_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007522282,WP_219302659_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)94:0.0007529148)26:0.0008288141,(WP_118836779_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015075054,WP_127308507_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)75:0.0007535419)19:0.0000023631,(WP_127253299_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_127266391_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007526184)100:0.0007526430)10:0.0000023611,WP_101126723_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)11:0.0000023611,MCL5729262_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007524694)23:0.0000023611)48:0.0008279281,((WP_219195755_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015212654,(WP_101129295_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015232658,(WP_002235366_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_239759853_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007555400)100:0.0007527162)80:0.0007598861)69:0.0000023611,WP_127281858_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)76:0.0015095868)36:0.0000023611,WP_101115884_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)24:0.0000023611,MCL6081067_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0015056187)43:0.0000023611,(((((((((WP_024464932_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007527567,WP_127233377_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007531114)13:0.0000023611,WP_002220155_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)14:0.0000023611,(WP_002254272_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007526198,(WP_002238605_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611,WP_024497027_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007530325)100:0.0007531708)18:0.0000023611)34:0.0000023611,WP_061727831_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007525308)96:0.0007523490,MBH5688057_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007546780)38:0.0000023611,WP_118825531_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007522116)12:0.0000023611,(WP_101116843_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007520555,WP_199204028_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0007519528)23:0.0000023611)23:0.0000023611,WP_002225943_DNA_directed_RNA_polymerase_subunit_beta_Neisseria_meningitidis:0.0000023611)72:0.0000023611,CAM09442_DNA_directed_RNA_polymerase_beta_chain_Neisseria_meningitidis_FAM18:0.0000023611)96:0.0014938234)40:0.0007462975);
+
+TIME STAMP
+----------
+
+Date and time: Wed Apr 19 07:21:08 2023
+Total CPU time used: 6936.944478 seconds (1h:55m:36s)
+Total wall-clock time used: 61749.93177 seconds (17h:9m:9s)
+
