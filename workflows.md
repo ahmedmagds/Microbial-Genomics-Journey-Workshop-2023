@@ -150,5 +150,5 @@ To bioinfo students: if you are unable to solve introductory problems on your ow
 * They use Python and the course begins with one week of introductory coding, continues with practical topics in bioinformatics, with plenty of coding examples, and ends with a group coding project.
 
 ## Further Readings
-[DEFINITIONS REGARDING ISOLATE RELATIONSHIPS](https://www.sciencedirect.com/science/article/pii/S1198743X1463192X?via%3Dihub)
-[ChatGPT for bioinformatics](https://medium.com/@91mattmoore/chatgpt-for-bioinformatics-404c6d0817a1)
+* [DEFINITIONS REGARDING ISOLATE RELATIONSHIPS](https://www.sciencedirect.com/science/article/pii/S1198743X1463192X?via%3Dihub)
+* [ChatGPT for bioinformatics](https://medium.com/@91mattmoore/chatgpt-for-bioinformatics-404c6d0817a1)
