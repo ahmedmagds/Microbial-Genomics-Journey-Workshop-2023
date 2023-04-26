@@ -21,8 +21,8 @@ Please complete the survey below as follows.
 * Comments (optional but will be appreciated)
 
 ### updated knowledge map
-We started this workshop with "Map your Microbial Genomics knowledge out". Knowledge mapping helps communicate information and solve complex problems. Now it is time to update your knowledge map with what we learnt in this workshop. Here is my version.<br/>
-![Knowledge Map](Knowledge_Map_2.jpg)
+We started this workshop with "Map your Microbial Genomics knowledge out". Knowledge mapping helps communicate information and solve complex problems. Now it is time to update your knowledge map with what we learnt in this workshop. Here is my version. You can access a powerpoint version of this Microbial genomics knowledge map [here](Knowledge_Map_2.pptx).<br/>
+![Knowledge Map](Knowledge_Map_final.jpg)
 
 ---
 
