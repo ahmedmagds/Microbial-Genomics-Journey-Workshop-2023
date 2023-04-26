@@ -14,6 +14,6 @@
 * Team should divide work. For instance, each one assemble 5 genomes...etc, using the same command.
 
 ### Questions to answer
-These 50 genomes are from a single species. There are two group of isolates (case and control), 25 each. Ypu are provided with fastq reads files.
+These 50 genomes are from a single species. There are two group of isolates (case and control), 25 each. You are provided with fastq reads files.
 1. What are the differences between the genomes in the case group vs control group?
 2. Build a phylogenetic tree for these 50 genomes. Describe your findings on the tree!
