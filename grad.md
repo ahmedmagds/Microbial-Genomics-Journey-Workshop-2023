@@ -107,6 +107,9 @@ iqtree -s core_gene_alignment_filtered.aln -T 64 -m HKY -B 1000
 The iqtree program outputs a bunch of files, the core_gene_alignment_filtered.aln.contree can be opened in [Itol](https://itol.embl.de/tree/163116135115285751683734250#) or Figtree, and it includes the branch support values. I used two genes from the Abricate output and ST designation from the MLST step to show on the tree.
 ![ML Tree](grad_project_tree.jpg)
 
+## HPC
+[Request Access to CHOP Respublica HPC](https://www.research.chop.edu/applications/cirrus)
+
 ## Further Readings
 * [PATRIC](https://www.bv-brc.org/)Bacterial and Viral Bioinformatics Resource Center (BV-BRC). BV-BRC is a joint effort among the University of Chicago (UChicago), J Craig Venter Institute (JCVI), Fellowship for Interpretation of Genomes (FIG), and University of Virginia (UVA) that provides a web-based information system designed to support the biomedical research community’s work on bacterial and viral infectious diseases via integration of vital pathogen information with rich data and analysis tools. BV-BRC combines the data, technology, and extensive user communities from two long-running centers: PATRIC, the bacterial system , and IRD/ViPR, the viral systems.
 * [KBase](https://www.kbase.us/) is the first large-scale data science platform that enables users to upload their own data, analyze it alongside collaborator and public data, build increasingly realistic models, and share and publish reproducible workflows and conclusions.

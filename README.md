@@ -119,4 +119,5 @@ Erin Marie Theiller (Erin)<br/>
 * [Session 12: Graduation Project](grad.md)
   * [Description](grad.md/#description)
   * [Solution](grad.md/#solution)
-  * [Further Readings](grad.md/#further-readings)
+  * [CHOP Cluster](grad.md/#HPC)
+  * [Further Readings](grad.md/#further-readings)  
