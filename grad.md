@@ -19,15 +19,15 @@ These 50 genomes are from a single species. There are two group of isolates (cas
 2. Build a phylogenetic tree for these 50 genomes. Describe your findings on the tree!
 
 ### Solution
-####QC
-#####FASTQC
+**QC**<br/>
+**FASTQC**
 ```
 cat GCA_000775395.1_R1.fastq.gz GCA_000775395.1_R2.fastq.gz > GCA_000775395.1_combined.fastq.gz
 conda activate fastqc2
 fastqc GCA_000775395.1_combined.fastq.gz
 ```
 
-####Assembly
+**Assembly**<br/>
 ```
 ../snippy_convert_list_input_tab.py ../accs.txt ../spades_bash.sh
 chmod +x spades_bash.sh
@@ -35,13 +35,13 @@ chmod +x spades_bash.sh
 spades.py --pe1-1 GCA_905128515.1_R1.fastq.gz --pe1-2 GCA_905128515.1_R2.fastq.gz -o assem_GCA_905128515.1
 ```
 
-####MLST
+**MLST**
 ```
 mlst --csv *.fasta > ../all_mlst.csv
 ```
 
-####QC
-#####BUSCO
+**QC**<br/>
+**BUSCO**
 ```
 conda activate busco
 snippy_convert_list_input_tab.py accs.txt busco_bash.sh
@@ -49,13 +49,13 @@ chmod +x busco_bash.sh
 cd assemblies
 ./busco_bash.sh
 ```
-#####mash
-######good example
+**mash**<br/>
+**good example**
 ```
 mash screen -w -p 8 /Users/moustafaam/Downloads/refseq.genomes.k21s1000.msh assemblies/GCA_000717515.1.fasta > GCA_000717515.1_mash.txt
 sort -gr GCA_000717515.1_mash.txt > GCA_000717515.1_mash_sorted.txt
 ```
-######contamination example
+**contamination example**
 ```
 mash screen -w -p 8 /Users/moustafaam/Downloads/refseq.genomes.k21s1000.msh assemblies/GCA_001068065.1.fasta > GCA_001068065.1_mash.txt
 mash screen -w -p 8 /Users/moustafaam/Downloads/refseq.genomes.k21s1000.msh assemblies/GCA_905128515.1.fasta > GCA_905128515.1_mash.txt
@@ -64,7 +64,7 @@ sort -gr GCA_905128515.1_mash.txt > GCA_905128515.1_mash_sorted.txt
 ```
 **These two genomes were excluded from the next steps.**
 
-####Annotation
+**Annotation**
 ```
 chmod +x copy_rename_files_prokka.py
 ./copy_rename_files_prokka.py
@@ -75,7 +75,7 @@ chmod +x prokka_bash.sh
 prokka --outdir annotations/annot_GCA_003203435.1 --kingdom Bacteria --locustag GCA_003203435.1 --prefix GCA_003203435.1 assemblies/GCA_003203435.1.fasta
 ```
 
-####pangenome
+**pangenome**
 ```
 find ./ -name '*.gff' -exec cp -prv '{}' '/Users/moustafaam/MGJW/final_project/fastq/gff' ';'
 conda activate panaroo_m2
@@ -83,25 +83,25 @@ cd gff
 panaroo -i *.gff -a core --aligner mafft -t 8 -o panaroo_results_align/ --clean-mode strict
 ```
 
-####GWAS
-#####Scoary
+**GWAS**<br/>
+**Scoary**
 ```
 scoary -t isolates.csv -g gene_presence_absence_roary.csv
 ```
-There are 23 genes that are only present in the 24 isolates in the case group (100% specificity and sensitivity).
+There are 23 genes that are only present in the 24 isolates in the case group (100% specificity and sensitivity).<br/>
 
-#####ABRICATE
+**ABRICATE**
 ```
 for f in assemblies/*.fasta; do abricate $f > $f.tab ; done
 abricate --summary *.tab > abricate_summary.tab
 ```
 
-####phylogeny
+**phylogeny**
 ```
 iqtree -s core_gene_alignment_filtered.aln -T 64 -m HKY -B 1000
 ```
 
-####Visualization
+**Visualization**<br/>
 The iqtree program outputs a bunch of files, the core_gene_alignment_filtered.aln.contree can be opened in [Itol](https://itol.embl.de/tree/163116135115285751683734250#) or Figtree, and it includes the branch support values. I used two genes from the Abricate output and ST designation from the MLST step to show on the tree.
 ![ML Tree](grad_project_tree.jpg)
 
