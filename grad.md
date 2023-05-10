@@ -39,6 +39,7 @@ spades.py --pe1-1 GCA_905128515.1_R1.fastq.gz --pe1-2 GCA_905128515.1_R2.fastq.g
 ```
 mlst --csv *.fasta > ../all_mlst.csv
 ```
+**There were an issue with the assembled genomes from the reads I gave you. Two sequence types (ST11/control and ST258/case) would have been identified if the right assemblies were used.**
 
 **QC**<br/>
 **BUSCO**
@@ -100,6 +101,7 @@ abricate --summary *.tab > abricate_summary.tab
 ```
 iqtree -s core_gene_alignment_filtered.aln -T 64 -m HKY -B 1000
 ```
+**There were an issue with the assembled genomes from the reads I gave you. Even with that, the tree clearly shows the two clades.**<br/>
 
 **Visualization**<br/>
 The iqtree program outputs a bunch of files, the core_gene_alignment_filtered.aln.contree can be opened in [Itol](https://itol.embl.de/tree/163116135115285751683734250#) or Figtree, and it includes the branch support values. I used two genes from the Abricate output and ST designation from the MLST step to show on the tree.
