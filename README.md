@@ -8,8 +8,8 @@ Daniel P. Morreale (Dan)<br/>
 Qianxuan She (Sean)<br/>
 Erin Marie Theiller (Erin)<br/>
 
-__Recordings__
-**All sessions were recorded and are available on** [YouTube](https://www.youtube.com/playlist?list=PLflzkSbbJ6yGWQETl5X0LDNLqi7K50WNQ).<br/>
+## Recordings
+**All sessions were recorded and they are available on** [YouTube](https://www.youtube.com/playlist?list=PLflzkSbbJ6yGWQETl5X0LDNLqi7K50WNQ).<br/>
 
 ## Syllabus
 * [Why is it important to learn microbial genomics?](Unix_intro.md/#why-is-it-important-to-learn-microbial-genomics)
